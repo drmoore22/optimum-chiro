@@ -573,7 +573,7 @@
     </div>
     <div class="contact-form-card">
       <p style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.5rem;">Send an Inquiry</p>
-      <form action="/thank-you" method="get" onsubmit="this.action='/thank-you'">
+      <form id="atty-form" novalidate>
         <div class="form-group">
           <label for="atty-name">Your Name</label>
           <input type="text" id="atty-name" name="name" placeholder="Attorney or firm name" />
@@ -602,7 +602,9 @@
           <label for="atty-message">Brief Description</label>
           <textarea id="atty-message" name="message" placeholder="Case type, timeline, or any other details…"></textarea>
         </div>
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <button type="submit" class="btn-submit">Submit Inquiry</button>
+        <p id="atty-error" style="display:none;color:#e8a29a;font-size:0.85rem;margin-top:10px;">Please enter your name and an email or phone number, or call (251) 281-8768.</p>
       </form>
     </div>
   </div>
@@ -644,9 +646,35 @@
 </footer>
 
 <script>
-  document.querySelector('form').addEventListener('submit', function(e) {
+  document.getElementById('atty-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    window.location.href = 'thank-you.html';
+    const form = this, btn = form.querySelector('.btn-submit'), err = document.getElementById('atty-error');
+    const data = Object.fromEntries(new FormData(form).entries());
+    if (data.botcheck) return;
+    delete data.botcheck;
+    if (!data.name.trim() || (!data.email.trim() && !data.phone.trim())) {
+      err.textContent = 'Please enter your name and an email or phone number.';
+      err.style.display = 'block'; return;
+    }
+    err.style.display = 'none'; btn.disabled = true; btn.textContent = 'Sending…';
+    const payload = Object.assign({
+      access_key: '6d7a080e-1d3b-41a6-8aaa-3b67c3d56b53',
+      subject: 'Attorney inquiry — ' + data.name,
+      from_name: 'optimumchiropracticcare.com',
+      form: 'Attorney Inquiry (For Attorneys page)'
+    }, data);
+    if (data.email) payload.replyto = data.email;
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(r => r.json()).then(res => {
+      if (!res.success) throw new Error(res.message || 'failed');
+      window.location.href = '/thank-you';
+    }).catch(() => {
+      err.textContent = 'Sorry — your inquiry didn\'t go through. Please call (251) 281-8768 or email drmoore@optimumchiropracticcare.com.';
+      err.style.display = 'block'; btn.disabled = false; btn.textContent = 'Submit Inquiry';
+    });
   });
 </script>
 

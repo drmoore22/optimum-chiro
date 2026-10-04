@@ -887,7 +887,8 @@ img { max-width: 100%; display: block; }
 
       <div class="form-group">
         <label class="form-label" for="message">Message</label>
-        <textarea class="form-textarea" id="message" name="message" placeholder="Tell us briefly about your situation or what questions you have. If you're recovering from an accident, include the approximate date it occurred."></textarea>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Briefly, what can we help with? If you were in an accident, the approximate date is helpful."></textarea>
+        <p style="font-size:0.78rem;color:var(--fg-muted);margin-top:6px;">Please don't include detailed medical history here — we'll go over everything at your visit.</p>
       </div>
 
       <div class="form-group">
@@ -908,7 +909,10 @@ img { max-width: 100%; display: block; }
         For after-hours urgent questions about an accident injury, you may also email Dr. Moore directly at drmoore@optimumchiropracticcare.com.
       </p>
 
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
       <button type="submit" class="form-submit">Send Request</button>
+      <p id="form-error" style="display:none;color:#c0392b;font-size:0.85rem;margin-top:10px;">Sorry — your request didn't go through. Please call us at <a href="tel:+12512818768">(251) 281-8768</a>.</p>
+      <p style="font-size:0.8rem;color:var(--fg-muted);margin-top:10px;">For faster scheduling, call <a href="tel:+12512818768">(251) 281-8768</a>.</p>
 
       <p class="form-disclaimer">
         Your information is kept confidential and used only to contact you about your appointment request. We do not share patient information with third parties.
@@ -1134,10 +1138,32 @@ img { max-width: 100%; display: block; }
 
     if (!valid) return;
 
-    // Show success
-    form.style.display = 'none';
-    successBox.classList.add('visible');
-    successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    const btn = form.querySelector('.form-submit');
+    const errBox = document.getElementById('form-error');
+    btn.disabled = true; btn.textContent = 'Sending…'; errBox.style.display = 'none';
+    const data = Object.fromEntries(new FormData(form).entries());
+    if (data.botcheck) return;
+    delete data.botcheck;
+    const payload = Object.assign({
+      access_key: '6d7a080e-1d3b-41a6-8aaa-3b67c3d56b53',
+      subject: 'New patient request — ' + data.first_name + ' ' + data.last_name,
+      from_name: 'optimumchiropracticcare.com',
+      form: 'New Patient Request (Contact page)'
+    }, data);
+    if (data.email) payload.replyto = data.email;
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(r => r.json()).then(res => {
+      if (!res.success) throw new Error(res.message || 'failed');
+      form.style.display = 'none';
+      successBox.classList.add('visible');
+      successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }).catch(() => {
+      errBox.style.display = 'block';
+      btn.disabled = false; btn.textContent = 'Send Request';
+    });
   });
 
   // Clear error state on input

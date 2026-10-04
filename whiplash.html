@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Whiplash & Spinal Trauma | Dr. Jordan Moore | Mobile, AL</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap">
+<style>
+/* === DESIGN SYSTEM === */
+:root {
+  --charcoal: #1e2228;
+  --teal: #2a7a6f;
+  --teal-light: #3a9a8d;
+  --gold: #c9a84c;
+  --gold-light: #e0c06a;
+  --cream: #f8f5ef;
+  --white: #ffffff;
+  --text: #2c3038;
+  --text-muted: #6b7280;
+  --border: #e5e1d8;
+
+  --bg: var(--cream);
+  --surface: var(--white);
+  --fg: var(--text);
+  --fg-muted: var(--text-muted);
+  --card-border: var(--border);
+  --accent: var(--teal);
+  --highlight: var(--gold);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171c;
+    --surface: #1e2228;
+    --fg: #e8e4dc;
+    --fg-muted: #9ca3af;
+    --card-border: #2e3340;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14171c;
+  --surface: #1e2228;
+  --fg: #e8e4dc;
+  --fg-muted: #9ca3af;
+  --card-border: #2e3340;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+/* === NAVIGATION === */
+.nav {
+  background: var(--charcoal);
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 100;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  gap: 24px;
+}
+
+.nav-logo {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.nav-logo span { color: var(--gold); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.82);
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--gold-light); }
+.nav-links a.active { color: var(--gold); }
+
+.nav-cta {
+  background: var(--teal) !important;
+  color: #ffffff !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  transition: background 0.2s !important;
+}
+
+.nav-cta:hover { background: var(--teal-light) !important; }
+
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 4px;
+}
+
+/* === HERO === */
+.hero {
+  background: var(--charcoal);
+  padding: 80px 24px 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 40%, rgba(42,122,111,0.2) 0%, transparent 55%),
+    radial-gradient(ellipse at 15% 70%, rgba(201,168,76,0.07) 0%, transparent 45%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ffffff;
+  text-wrap: balance;
+  margin-bottom: 24px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.hero-desc {
+  color: rgba(248,245,239,0.78);
+  font-size: 1.06rem;
+  line-height: 1.78;
+  max-width: 640px;
+  margin-bottom: 36px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-stat-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  line-height: 1;
+  margin-bottom: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-stat-label {
+  font-size: 0.82rem;
+  color: rgba(248,245,239,0.6);
+  letter-spacing: 0.03em;
+}
+
+/* === SECTION BASE === */
+.section {
+  padding: 80px 24px;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-narrow {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.section-eyebrow {
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 14px;
+}
+
+.section h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  line-height: 1.18;
+  color: var(--fg);
+  text-wrap: balance;
+  margin-bottom: 24px;
+}
+
+.section-lead {
+  font-size: 1.06rem;
+  color: var(--fg-muted);
+  line-height: 1.78;
+  margin-bottom: 48px;
+}
+
+/* === ANATOMY DIAGRAMS SECTION === */
+.diagrams-section {
+  background: var(--surface);
+  border-top: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.diagrams-intro {
+  max-width: 720px;
+  margin-bottom: 60px;
+}
+
+.diagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.diagram-card {
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.diagram-visual {
+  background: #f0eee9;
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .diagram-visual {
+    background: #1a1f27;
+  }
+}
+:root[data-theme="dark"] .diagram-visual {
+  background: #1a1f27;
+}
+
+.diagram-card-body {
+  padding: 24px;
+}
+
+.diagram-number {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+
+.diagram-card-body h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 10px;
+}
+
+.diagram-card-body p {
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  line-height: 1.68;
+}
+
+/* === SVG PALETTE VARS === */
+svg .spine-bone { fill: #e8e0d0; stroke: #2a7a6f; stroke-width: 1.2; }
+svg .spine-disc { fill: #b8d4ce; }
+svg .spine-ligament { stroke: #c9a84c; stroke-width: 2; fill: none; stroke-dasharray: 4 2; }
+svg .spine-nerve { stroke: #e0c06a; stroke-width: 1.5; fill: none; }
+svg .spine-label { font-family: 'DM Sans', sans-serif; font-size: 9px; fill: #6b7280; }
+svg .highlight-red { stroke: #c0392b; fill: rgba(192,57,43,0.12); }
+svg .highlight-gold { stroke: #c9a84c; fill: rgba(201,168,76,0.15); }
+svg .arrow { stroke: #2a7a6f; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+
+/* === CLINICAL EXPLANATION SECTIONS === */
+.clinical-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.clinical-content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 14px;
+}
+
+.clinical-content p {
+  font-size: 0.95rem;
+  color: var(--fg-muted);
+  line-height: 1.78;
+  margin-bottom: 14px;
+}
+
+.clinical-content p:last-child { margin-bottom: 0; }
+
+.callout-box {
+  background: rgba(42,122,111,0.08);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 6px 6px 0;
+  padding: 18px 20px;
+  margin: 20px 0;
+}
+
+.callout-box p {
+  font-size: 0.92rem;
+  color: var(--fg);
+  line-height: 1.68;
+  margin: 0 !important;
+}
+
+.callout-gold {
+  background: rgba(201,168,76,0.08);
+  border-left-color: var(--gold);
+}
+
+/* === SPRAINS VS STRAINS === */
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.compare-card {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.compare-card-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.compare-card.sprain .compare-card-label { color: var(--gold); }
+.compare-card.strain .compare-card-label { color: var(--teal); }
+
+.compare-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 14px;
+}
+
+.compare-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.compare-card li {
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.compare-card li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--card-border);
+}
+
+.compare-card.sprain li::before { color: var(--gold); }
+.compare-card.strain li::before { color: var(--teal); }
+
+/* === DMX SECTION === */
+.dmx-section {
+  background: var(--charcoal);
+  color: #ffffff;
+}
+
+.dmx-section .section-eyebrow { color: var(--gold); }
+.dmx-section h2 { color: #ffffff; }
+.dmx-section .section-lead { color: rgba(248,245,239,0.72); }
+
+.dmx-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.dmx-visual {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 10px;
+  padding: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+}
+
+.dmx-points {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dmx-point {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.dmx-point-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(42,122,111,0.2);
+  border: 1px solid rgba(42,122,111,0.35);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dmx-point-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--teal-light);
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.dmx-point h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.dmx-point p {
+  font-size: 0.88rem;
+  color: rgba(248,245,239,0.65);
+  line-height: 1.65;
+}
+
+/* === CTA === */
+.cta-section {
+  background: var(--teal);
+  padding: 72px 24px;
+}
+
+.cta-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-inner h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+
+.cta-inner p {
+  color: rgba(255,255,255,0.82);
+  font-size: 1.05rem;
+  margin-bottom: 36px;
+}
+
+.btn-white {
+  background: #ffffff;
+  color: var(--teal);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.2s;
+}
+
+.btn-white:hover { background: var(--cream); }
+
+/* === FOOTER === */
+.footer {
+  background: var(--charcoal);
+  color: rgba(248,245,239,0.72);
+  padding: 56px 24px 32px;
+}
+
+.footer-inner { max-width: 1100px; margin: 0 auto; }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-brand-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.footer-brand-logo span { color: var(--gold); }
+
+.footer-brand-desc {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: rgba(248,245,239,0.6);
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.footer-contact-line {
+  font-size: 0.88rem;
+  color: rgba(248,245,239,0.72);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.footer-contact-line svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 1.8;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.footer-heading {
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: rgba(248,245,239,0.68);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--gold-light); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-copy { font-size: 0.82rem; color: rgba(248,245,239,0.45); }
+
+/* === RESPONSIVE === */
+@media (max-width: 860px) {
+  .clinical-grid,
+  .dmx-grid,
+  .compare-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 680px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 68px;
+    left: 0; right: 0;
+    background: var(--charcoal);
+    padding: 16px 24px 24px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    z-index: 99;
+  }
+  .nav-hamburger { display: block; }
+  .nav { position: relative; }
+  .diagram-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-stats { gap: 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Optimum <span>Chiropractic</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="about.html">About Dr. Moore</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="whiplash.html" class="active">Whiplash &amp; Trauma</a></li>
+      <li><a href="for-attorneys.html">For Attorneys</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="nav-cta">New Patient</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Cervical Acceleration-Deceleration Injury</p>
+    <h1>Whiplash &amp; <em>Spinal Trauma</em></h1>
+    <p class="hero-desc">
+      Whiplash is among the most misunderstood and underdiagnosed injuries in medicine. Symptoms are frequently delayed, standard imaging routinely misses the underlying ligament damage, and untreated injuries can progress to permanent spinal instability. Dr. Moore specializes in the objective evaluation and treatment of these injuries.
+    </p>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-value">72h</div>
+        <div class="hero-stat-label">Typical symptom onset delay</div>
+      </div>
+      <div>
+        <div class="hero-stat-value">50%</div>
+        <div class="hero-stat-label">Undetected by standard X-ray</div>
+      </div>
+      <div>
+        <div class="hero-stat-value">1 of 1</div>
+        <div class="hero-stat-label">Digital Motion X-Ray in Mobile, AL</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHIPLASH MECHANICS -->
+<section class="section" aria-labelledby="mechanics-heading">
+  <div class="section-inner">
+    <div class="section-narrow">
+      <p class="section-eyebrow">Understanding the Injury</p>
+      <h2 id="mechanics-heading">What Actually Happens During a Whiplash Event</h2>
+      <div class="section-lead">
+        <p>Whiplash — formally termed Cervical Acceleration-Deceleration (CAD) injury — describes the rapid, forced flexion-extension of the cervical spine that occurs during a sudden impact. The mechanics unfold in milliseconds, well beyond the body's reflexive muscular protection response.</p>
+      </div>
+      <div class="clinical-content">
+        <p>During a rear-impact collision, the torso is accelerated forward by the car seat while the head, unsupported, initially remains stationary. This differential creates a shearing force across the cervical spine. The lower cervical segments hyperextend first, while the upper segments simultaneously flex — creating an S-shaped curvature that places the spinal discs, facet joints, and ligaments under extreme tensile and compressive load.</p>
+        <p>The entire biomechanical event typically takes 150–300 milliseconds. Human reaction time is approximately 200 milliseconds. This means the injury sequence is complete before the body's muscles can contract to stabilize the neck. The passenger's head-restraint position, seat stiffness, awareness of the impending impact, and the direction of force all influence the degree of injury.</p>
+        <div class="callout-box">
+          <p><strong>Key fact:</strong> Research has documented significant cervical injury at impact speeds as low as 5–8 mph. Occupants of vehicles with little visible damage may sustain substantial soft-tissue injury because energy-absorbing bumpers reduce structural damage to the vehicle while transferring force directly to the occupants.</p>
+        </div>
+        <p>The joints, discs, ligaments, and musculature of the neck all absorb this energy in varying proportions depending on individual anatomy, the direction of force, and whether the occupant was braced at the moment of impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DELAYED SYMPTOMS -->
+<section class="section" style="background: var(--surface); border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border);" aria-labelledby="delayed-heading">
+  <div class="section-inner">
+    <div class="section-narrow">
+      <p class="section-eyebrow">Why Symptoms Are Delayed</p>
+      <h2 id="delayed-heading">Feeling Fine After an Accident Does Not Mean You Are Fine</h2>
+      <p class="section-lead">
+        It is common — and clinically significant — for whiplash symptoms to be absent or minimal immediately after a collision. This delay leads many patients to forgo evaluation, a decision that can have long-term consequences.
+      </p>
+
+      <div class="clinical-content">
+        <h3>The Neurochemical Response</h3>
+        <p>At the moment of impact, the body releases a cascade of stress hormones — primarily epinephrine (adrenaline) and cortisol. These hormones suppress pain perception as part of the fight-or-flight response, allowing an injured person to function in the immediate aftermath of trauma. This neurochemical masking typically persists for hours to days.</p>
+
+        <h3>The Inflammatory Cascade</h3>
+        <p>Soft tissue injury triggers an inflammatory response that builds over 24–72 hours following trauma. Pro-inflammatory cytokines accumulate in damaged tissue, nerve endings become sensitized, and edema develops around injured structures. Most patients report peak pain and stiffness 2–3 days post-accident — precisely when inflammation is at its height.</p>
+
+        <div class="callout-box callout-gold">
+          <p><strong>Clinical implication:</strong> Waiting until symptoms are severe to seek evaluation can complicate causation documentation and allow injury patterns to become more difficult to treat. Early evaluation — even within the first 24 hours when symptoms are minimal — establishes a clear clinical record of findings that correlates with the accident event.</p>
+        </div>
+
+        <h3>The Protective Muscle Spasm Response</h3>
+        <p>Injured cervical structures trigger involuntary muscle guarding — a protective splinting response that maintains spinal position and reduces the immediate pain signal. As days pass and the nervous system recalibrates, spasm patterns shift, and pain referral patterns emerge to the shoulders, arms, and head. What begins as neck stiffness may evolve into headaches, radiating arm pain, cognitive changes, and sleep disturbance.</p>
+
+        <h3>Neurological Adaptation Over Time</h3>
+        <p>Persistent injury to joint mechanoreceptors — the sensory structures within spinal ligaments that inform the brain about head position and movement — can lead to proprioceptive deficits, dizziness, visual disturbances, and difficulty concentrating. These findings, sometimes dismissed as psychological, have well-documented neuroanatomical explanations in the whiplash literature.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANATOMY DIAGRAMS -->
+<section class="diagrams-section section" aria-labelledby="diagrams-heading">
+  <div class="section-inner">
+    <div class="diagrams-intro">
+      <p class="section-eyebrow">Spinal Anatomy in Motion</p>
+      <h2 id="diagrams-heading">The Stages of Whiplash Injury</h2>
+      <p class="section-lead">
+        Understanding what happens to the cervical spine during a whiplash event — and what the long-term consequences of untreated injury look like — helps clarify why objective evaluation is essential.
+      </p>
+    </div>
+
+    <div class="diagram-grid">
+
+      <!-- 1: Normal Cervical Spine -->
+      <div class="diagram-card">
+        <div class="diagram-visual">
+          <svg viewBox="0 0 200 220" width="200" height="220" role="img" aria-label="Normal cervical spine diagram">
+            <defs>
+              <marker id="arr1" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#2a7a6f"/>
+              </marker>
+            </defs>
+            <!-- Vertebrae -->
+            <rect x="72" y="20" width="56" height="22" rx="5" class="spine-bone"/>
+            <rect x="68" y="50" width="64" height="22" rx="5" class="spine-bone"/>
+            <rect x="65" y="80" width="70" height="22" rx="5" class="spine-bone"/>
+            <rect x="63" y="110" width="74" height="22" rx="5" class="spine-bone"/>
+            <rect x="61" y="140" width="78" height="22" rx="5" class="spine-bone"/>
+            <rect x="59" y="170" width="82" height="22" rx="5" class="spine-bone"/>
+            <!-- Discs -->
+            <rect x="72" y="42" width="56" height="8" rx="3" class="spine-disc"/>
+            <rect x="68" y="72" width="64" height="8" rx="3" class="spine-disc"/>
+            <rect x="65" y="102" width="70" height="8" rx="3" class="spine-disc"/>
+            <rect x="63" y="132" width="74" height="8" rx="3" class="spine-disc"/>
+            <rect x="61" y="162" width="78" height="8" rx="3" class="spine-disc"/>
+            <!-- Curve guide -->
+            <path d="M100,20 Q120,110 100,192" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3 3" fill="none" opacity="0.5"/>
+            <!-- Labels -->
+            <text x="148" y="32" class="spine-label">C1</text>
+            <text x="148" y="62" class="spine-label">C2</text>
+            <text x="148" y="92" class="spine-label">C3</text>
+            <text x="148" y="122" class="spine-label">C4</text>
+            <text x="148" y="152" class="spine-label">C5</text>
+            <text x="148" y="182" class="spine-label">C6</text>
+            <text x="96" y="210" class="spine-label" text-anchor="middle">Normal Lordosis</text>
+          </svg>
+        </div>
+        <div class="diagram-card-body">
+          <p class="diagram-number">01 — Normal Anatomy</p>
+          <h3>Healthy Cervical Spine</h3>
+          <p>The normal cervical spine maintains a gentle lordotic (forward) curve of approximately 35–45 degrees. Seven vertebrae are separated by hydrated discs acting as shock absorbers. Paired facet joints, interspinous ligaments, and the anterior/posterior longitudinal ligaments provide stability while allowing full range of motion.</p>
+        </div>
+      </div>
+
+      <!-- 2: Hyperextension Phase -->
+      <div class="diagram-card">
+        <div class="diagram-visual">
+          <svg viewBox="0 0 200 220" width="200" height="220" role="img" aria-label="Hyperextension phase diagram">
+            <defs>
+              <marker id="arr2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#c0392b"/>
+              </marker>
+            </defs>
+            <!-- Force arrow -->
+            <path d="M165,80 L130,80" stroke="#c0392b" stroke-width="2.5" marker-end="url(#arr2)"/>
+            <text x="170" y="84" class="spine-label" fill="#c0392b">Force</text>
+            <!-- S-curve vertebrae - hyperextension -->
+            <rect x="80" y="18" width="52" height="20" rx="4" class="spine-bone" transform="rotate(-8,106,28)"/>
+            <rect x="72" y="45" width="58" height="20" rx="4" class="spine-bone" transform="rotate(-4,101,55)"/>
+            <rect x="65" y="73" width="66" height="20" rx="4" class="spine-bone"/>
+            <rect x="63" y="103" width="70" height="20" rx="4" class="spine-bone" transform="rotate(5,98,113)"/>
+            <rect x="61" y="135" width="74" height="20" rx="4" class="spine-bone" transform="rotate(3,98,145)"/>
+            <rect x="59" y="165" width="78" height="20" rx="4" class="spine-bone"/>
+            <!-- Stress zone highlight -->
+            <ellipse cx="100" cy="95" rx="40" ry="28" fill="rgba(192,57,43,0.1)" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <!-- Discs -->
+            <rect x="72" y="38" width="58" height="7" rx="3" class="spine-disc"/>
+            <rect x="68" y="66" width="62" height="7" rx="3" class="spine-disc"/>
+            <rect x="65" y="94" width="68" height="7" rx="3" class="spine-disc" fill="#c9806a" opacity="0.8"/>
+            <rect x="63" y="124" width="72" height="7" rx="3" class="spine-disc"/>
+            <rect x="61" y="156" width="76" height="7" rx="3" class="spine-disc"/>
+            <!-- Label -->
+            <text x="100" y="210" class="spine-label" text-anchor="middle" fill="#c0392b">Maximum Stress Zone</text>
+          </svg>
+        </div>
+        <div class="diagram-card-body">
+          <p class="diagram-number">02 — Phase One</p>
+          <h3>Hyperextension Phase</h3>
+          <p>As the torso is thrust forward, the lower cervical spine is forced into extension while the upper segments flex — producing an abnormal S-curve. The posterior elements (facet joint capsules, posterior ligaments, joint capsules) are placed under rapid tensile load, often exceeding the elastic limits of the ligament fibers. This phase occurs in approximately 50–75 milliseconds.</p>
+        </div>
+      </div>
+
+      <!-- 3: Hyperflexion Phase -->
+      <div class="diagram-card">
+        <div class="diagram-visual">
+          <svg viewBox="0 0 200 220" width="200" height="220" role="img" aria-label="Hyperflexion rebound phase diagram">
+            <defs>
+              <marker id="arr3" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#c9a84c"/>
+              </marker>
+            </defs>
+            <!-- Rebound arrow -->
+            <path d="M40,60 L72,80" stroke="#c9a84c" stroke-width="2.5" marker-end="url(#arr3)"/>
+            <text x="18" y="56" class="spine-label" fill="#c9a84c" font-size="8">Rebound</text>
+            <!-- Vertebrae in flexion/forward lean -->
+            <rect x="85" y="20" width="50" height="20" rx="4" class="spine-bone" transform="rotate(10,110,30)"/>
+            <rect x="76" y="47" width="58" height="20" rx="4" class="spine-bone" transform="rotate(5,105,57)"/>
+            <rect x="66" y="75" width="66" height="20" rx="4" class="spine-bone"/>
+            <rect x="63" y="105" width="70" height="20" rx="4" class="spine-bone" transform="rotate(-3,98,115)"/>
+            <rect x="61" y="136" width="74" height="20" rx="4" class="spine-bone"/>
+            <rect x="59" y="165" width="78" height="20" rx="4" class="spine-bone"/>
+            <!-- Anterior stress highlight -->
+            <ellipse cx="97" cy="100" rx="38" ry="26" fill="rgba(201,168,76,0.1)" stroke="#c9a84c" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <!-- Discs compressed anteriorly -->
+            <rect x="77" y="40" width="56" height="7" rx="3" class="spine-disc"/>
+            <rect x="70" y="68" width="62" height="7" rx="3" class="spine-disc"/>
+            <rect x="66" y="96" width="66" height="7" rx="3" class="spine-disc" fill="#b8c4d4" opacity="0.8"/>
+            <rect x="63" y="126" width="70" height="7" rx="3" class="spine-disc"/>
+            <rect x="61" y="157" width="74" height="7" rx="3" class="spine-disc"/>
+            <text x="100" y="210" class="spine-label" text-anchor="middle" fill="#c9a84c">Anterior Compression</text>
+          </svg>
+        </div>
+        <div class="diagram-card-body">
+          <p class="diagram-number">03 — Phase Two</p>
+          <h3>Hyperflexion Rebound</h3>
+          <p>Following the initial extension, the head rebounds forward into hyperflexion, loading the anterior structures — the anterior longitudinal ligament, disc annulus, and anterior disc space. This rapid reversal can produce disc tears and anterior ligament damage while re-straining the posterior structures already injured during phase one. The total event lasts 150–300 milliseconds.</p>
+        </div>
+      </div>
+
+      <!-- 4: Ligament Laxity -->
+      <div class="diagram-card">
+        <div class="diagram-visual">
+          <svg viewBox="0 0 200 220" width="200" height="220" role="img" aria-label="Ligament laxity diagram">
+            <!-- Healthy ligament -->
+            <text x="50" y="22" class="spine-label" text-anchor="middle">Normal</text>
+            <rect x="25" y="30" width="50" height="16" rx="3" class="spine-bone"/>
+            <rect x="25" y="65" width="50" height="16" rx="3" class="spine-bone"/>
+            <!-- Taut ligament fibers -->
+            <line x1="30" y1="46" x2="30" y2="65" stroke="#2a7a6f" stroke-width="1.5"/>
+            <line x1="40" y1="46" x2="40" y2="65" stroke="#2a7a6f" stroke-width="1.5"/>
+            <line x1="50" y1="46" x2="50" y2="65" stroke="#2a7a6f" stroke-width="1.5"/>
+            <line x1="60" y1="46" x2="60" y2="65" stroke="#2a7a6f" stroke-width="1.5"/>
+            <line x1="70" y1="46" x2="70" y2="65" stroke="#2a7a6f" stroke-width="1.5"/>
+            <text x="50" y="92" class="spine-label" text-anchor="middle">Taut, intact</text>
+            <!-- Divider -->
+            <line x1="105" y1="15" x2="105" y2="190" stroke="#e5e1d8" stroke-width="1"/>
+            <!-- Lax ligament -->
+            <text x="150" y="22" class="spine-label" text-anchor="middle" fill="#c0392b">Lax / Torn</text>
+            <rect x="125" y="30" width="50" height="16" rx="3" class="spine-bone"/>
+            <rect x="128" y="65" width="50" height="16" rx="3" class="spine-bone" transform="translate(4,0)"/>
+            <!-- Lax wavy fibers with gap -->
+            <path d="M130,46 C128,50 127,56 130,65" stroke="#c0392b" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+            <path d="M140,46 C138,51 138,57 141,65" stroke="#c0392b" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+            <path d="M150,46 C149,52 150,58 151,65" stroke="#c0392b" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+            <path d="M160,46 C162,53 161,58 162,65" stroke="#c0392b" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+            <path d="M170,46 C173,52 172,57 174,65" stroke="#c0392b" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+            <!-- Gap indicator -->
+            <rect x="118" y="54" width="66" height="8" rx="2" fill="rgba(192,57,43,0.12)" stroke="#c0392b" stroke-width="1"/>
+            <text x="150" y="60" class="spine-label" text-anchor="middle" fill="#c0392b" font-size="7">Abnormal gap</text>
+            <text x="150" y="92" class="spine-label" text-anchor="middle" fill="#c0392b">Unstable segment</text>
+            <!-- Bottom explanation -->
+            <text x="100" y="140" class="spine-label" text-anchor="middle">Ligament laxity allows</text>
+            <text x="100" y="154" class="spine-label" text-anchor="middle">abnormal vertebral</text>
+            <text x="100" y="168" class="spine-label" text-anchor="middle">translation on motion</text>
+            <text x="100" y="185" class="spine-label" text-anchor="middle" fill="#c9a84c">Visible only on DMX</text>
+          </svg>
+        </div>
+        <div class="diagram-card-body">
+          <p class="diagram-number">04 — Ligament Injury</p>
+          <h3>Ligament Laxity &amp; Instability</h3>
+          <p>Spinal ligaments — the anterior and posterior longitudinal ligaments, interspinous ligaments, and joint capsule ligaments — have limited blood supply and do not heal with the same tensile strength as muscle. Partial tears result in permanent laxity: an inability to resist normal vertebral motion. This instability is invisible on static X-ray but clearly demonstrable on Digital Motion X-Ray imaging.</p>
+        </div>
+      </div>
+
+      <!-- 5: Disc Involvement -->
+      <div class="diagram-card">
+        <div class="diagram-visual">
+          <svg viewBox="0 0 200 220" width="200" height="220" role="img" aria-label="Disc involvement diagram">
+            <!-- Cross-section view of disc -->
+            <text x="100" y="18" class="spine-label" text-anchor="middle">Disc Cross-Section</text>
+            <!-- Normal disc -->
+            <ellipse cx="60" cy="80" rx="38" ry="28" fill="#e8e0d0" stroke="#2a7a6f" stroke-width="1.5"/>
+            <ellipse cx="60" cy="80" rx="22" ry="16" fill="#b8d4ce" stroke="#2a7a6f" stroke-width="1"/>
+            <text x="60" y="84" class="spine-label" text-anchor="middle">Nucleus</text>
+            <text x="60" y="120" class="spine-label" text-anchor="middle">Normal</text>
+            <!-- Divider -->
+            <line x1="105" y1="50" x2="105" y2="140" stroke="#e5e1d8" stroke-width="1"/>
+            <!-- Herniated disc -->
+            <ellipse cx="148" cy="80" rx="38" ry="28" fill="#e8e0d0" stroke="#c0392b" stroke-width="1.5"/>
+            <!-- Annular tear indication -->
+            <path d="M175,68 C182,72 186,82 180,90" stroke="#c0392b" stroke-width="2" fill="none"/>
+            <!-- Nucleus migrating -->
+            <ellipse cx="155" cy="80" rx="20" ry="14" fill="#b8d4ce" stroke="#c0392b" stroke-width="1"/>
+            <!-- Herniation bulge -->
+            <ellipse cx="178" cy="80" rx="10" ry="8" fill="rgba(184,212,206,0.7)" stroke="#c0392b" stroke-width="1.5"/>
+            <text x="148" y="120" class="spine-label" text-anchor="middle" fill="#c0392b">Herniation</text>
+            <!-- Nerve root -->
+            <path d="M185,70 L200,60" stroke="#e0c06a" stroke-width="2"/>
+            <path d="M185,90 L200,100" stroke="#e0c06a" stroke-width="2"/>
+            <text x="100" y="155" class="spine-label" text-anchor="middle">Annular fibers torn by</text>
+            <text x="100" y="168" class="spine-label" text-anchor="middle">rapid compression forces</text>
+            <text x="100" y="185" class="spine-label" text-anchor="middle" fill="#e0c06a">→ Nerve root compression</text>
+          </svg>
+        </div>
+        <div class="diagram-card-body">
+          <p class="diagram-number">05 — Disc Pathology</p>
+          <h3>Intervertebral Disc Involvement</h3>
+          <p>The intervertebral disc consists of a fibrous outer ring (annulus fibrosus) surrounding a gel-like center (nucleus pulposus). Rapid compressive and tensile forces during a whiplash event can create annular tears, allowing nucleus material to migrate and press against the exiting nerve root — producing radiating pain, numbness, or weakness in the arm or hand corresponding to the affected cervical level.</p>
+        </div>
+      </div>
+
+      <!-- 6: Chronic Degeneration -->
+      <div class="diagram-card">
+        <div class="diagram-visual">
+          <svg viewBox="0 0 200 220" width="200" height="220" role="img" aria-label="Chronic degeneration progression diagram">
+            <!-- Timeline progression -->
+            <text x="20" y="20" class="spine-label" font-weight="bold">Untreated Injury Timeline</text>
+            <!-- Phase 1: Acute (0-3 months) -->
+            <rect x="15" y="30" width="170" height="36" rx="4" fill="rgba(42,122,111,0.1)" stroke="#2a7a6f" stroke-width="1"/>
+            <text x="25" y="46" class="spine-label" fill="#2a7a6f" font-weight="bold">0–3 months</text>
+            <text x="25" y="58" class="spine-label">Pain, spasm, restricted motion</text>
+            <!-- Phase 2: Subacute (3-12 months) -->
+            <rect x="15" y="74" width="170" height="36" rx="4" fill="rgba(201,168,76,0.1)" stroke="#c9a84c" stroke-width="1"/>
+            <text x="25" y="90" class="spine-label" fill="#c9a84c" font-weight="bold">3–12 months</text>
+            <text x="25" y="102" class="spine-label">Scar tissue formation, laxity</text>
+            <!-- Phase 3: Chronic (1-5 years) -->
+            <rect x="15" y="118" width="170" height="36" rx="4" fill="rgba(192,57,43,0.1)" stroke="#c0392b" stroke-width="1"/>
+            <text x="25" y="134" class="spine-label" fill="#c0392b" font-weight="bold">1–5 years</text>
+            <text x="25" y="146" class="spine-label">Accelerated disc degeneration</text>
+            <!-- Phase 4: Permanent -->
+            <rect x="15" y="162" width="170" height="36" rx="4" fill="rgba(192,57,43,0.2)" stroke="#c0392b" stroke-width="1.5"/>
+            <text x="25" y="178" class="spine-label" fill="#c0392b" font-weight="bold">5+ years</text>
+            <text x="25" y="190" class="spine-label">Permanent spinal instability, stenosis</text>
+          </svg>
+        </div>
+        <div class="diagram-card-body">
+          <p class="diagram-number">06 — Long-Term Consequences</p>
+          <h3>Chronic Degeneration If Untreated</h3>
+          <p>Untreated spinal instability creates a well-documented cascade of degenerative change. Abnormal segmental motion produces chronic inflammation in the facet joints, accelerates disc desiccation and collapse, and stimulates bone spur formation. Over years, this process results in narrowing of the spinal canal (stenosis) and foraminal narrowing that permanently compromises nerve root space — outcomes that are preventable with early, appropriate intervention.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SPRAINS vs STRAINS -->
+<section class="section" aria-labelledby="sprains-heading">
+  <div class="section-inner">
+    <p class="section-eyebrow">Clinical Definitions</p>
+    <h2 id="sprains-heading">The Difference Between Sprains and Strains</h2>
+    <p class="section-lead">
+      These terms are frequently used interchangeably, but they describe injuries to fundamentally different tissues with distinct prognoses and implications for long-term stability.
+    </p>
+
+    <div class="compare-grid">
+      <div class="compare-card sprain">
+        <p class="compare-card-label">Ligament Injury</p>
+        <h3>Sprain</h3>
+        <ul>
+          <li>Injury to ligaments — the fibrous bands connecting bone to bone</li>
+          <li>Ligaments stabilize joints and resist excessive motion</li>
+          <li>Limited vascularity means slow and often incomplete healing</li>
+          <li>Partial tears result in permanent laxity (stretch injury)</li>
+          <li>Instability may not be symptomatic until progressive degeneration occurs</li>
+          <li>Graded I (stretch), II (partial tear), III (complete rupture)</li>
+          <li>Best assessed with Digital Motion X-Ray or MRI</li>
+        </ul>
+      </div>
+
+      <div class="compare-card strain">
+        <p class="compare-card-label">Muscle / Tendon Injury</p>
+        <h3>Strain</h3>
+        <ul>
+          <li>Injury to muscles or their tendinous attachments (muscle-to-bone)</li>
+          <li>Muscles generate movement and provide dynamic stability</li>
+          <li>Well-vascularized tissue; generally heals within 6–12 weeks</li>
+          <li>Results in pain, spasm, and temporarily reduced strength</li>
+          <li>Healed muscle returns to near-normal tensile strength with rehabilitation</li>
+          <li>Graded I (microtear), II (partial tear), III (complete rupture)</li>
+          <li>Assessed with palpation, MRI, and functional testing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top: 32px;">
+      <div class="callout-box">
+        <p><strong>Clinical significance:</strong> A patient who sustains a Grade II cervical ligament sprain (partial tear) may recover from the overlying muscle strain within a few weeks and feel substantially better — while the underlying ligament laxity creates silent instability that drives long-term degenerative change. This is why objective imaging of ligament integrity, not just symptom resolution, is the appropriate endpoint for whiplash evaluation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DMX SECTION -->
+<section class="dmx-section section" aria-labelledby="dmx-heading">
+  <div class="section-inner">
+    <p class="section-eyebrow">The Gold Standard for Ligament Evaluation</p>
+    <h2 id="dmx-heading">Why Standard X-Ray Misses<br>the Most Important Findings</h2>
+    <p class="section-lead">
+      Ligaments are soft tissue structures — they contain no calcium and produce no signal on standard radiography. A standard cervical X-ray in a whiplash patient may appear completely normal while the stabilizing ligament system is severely compromised.
+    </p>
+
+    <div class="dmx-grid">
+      <div class="dmx-visual">
+        <svg viewBox="0 0 280 240" width="280" height="240" role="img" aria-label="Digital motion X-ray concept diagram">
+          <defs>
+            <marker id="dmxarr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#3a9a8d"/>
+            </marker>
+          </defs>
+          <!-- Static X-ray panel -->
+          <rect x="10" y="10" width="110" height="220" rx="6" fill="#0d1117" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <text x="65" y="30" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9" fill="rgba(255,255,255,0.5)">STATIC X-RAY</text>
+          <!-- Static vertebrae outline only -->
+          <rect x="30" y="42" width="70" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <rect x="28" y="68" width="74" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <rect x="26" y="95" width="78" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <rect x="24" y="122" width="82" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <rect x="22" y="149" width="86" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <rect x="20" y="176" width="90" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <text x="65" y="215" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9" fill="#c0392b">Ligaments: not visible</text>
+
+          <!-- DMX panel -->
+          <rect x="160" y="10" width="110" height="220" rx="6" fill="#0d1117" stroke="rgba(42,122,111,0.5)" stroke-width="1.5"/>
+          <text x="215" y="30" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9" fill="rgba(58,154,141,0.9)">DIGITAL MOTION X-RAY</text>
+          <!-- Animated/motion vertebrae with offset -->
+          <rect x="178" y="42" width="70" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <rect x="178" y="68" width="74" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <!-- Offset/lax segment highlighted -->
+          <rect x="184" y="95" width="78" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <!-- Instability highlight -->
+          <rect x="182" y="122" width="82" height="18" rx="3" fill="rgba(192,57,43,0.25)" stroke="#c0392b" stroke-width="1.5"/>
+          <path d="M178,131 L182,131" stroke="#c9a84c" stroke-width="2" marker-end="url(#dmxarr)"/>
+          <text x="250" y="134" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="8" fill="#c9a84c">Laxity</text>
+          <rect x="178" y="149" width="86" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <rect x="176" y="176" width="90" height="18" rx="3" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <!-- Ligament visualization -->
+          <line x1="183" y1="60" x2="183" y2="68" stroke="rgba(42,122,111,0.8)" stroke-width="1.5"/>
+          <line x1="193" y1="60" x2="193" y2="68" stroke="rgba(42,122,111,0.8)" stroke-width="1.5"/>
+          <line x1="203" y1="60" x2="203" y2="68" stroke="rgba(42,122,111,0.8)" stroke-width="1.5"/>
+          <line x1="213" y1="60" x2="213" y2="68" stroke="rgba(42,122,111,0.8)" stroke-width="1.5"/>
+          <text x="215" y="215" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9" fill="#3a9a8d">Instability quantified</text>
+        </svg>
+      </div>
+
+      <div class="dmx-points">
+        <div class="dmx-point">
+          <div class="dmx-point-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <div>
+            <h4>Real-Time Fluoroscopic Video</h4>
+            <p>DMX captures continuous X-ray imaging at 30 frames per second while the patient performs guided cervical movements. The result is a video of the spine in motion, revealing dynamic instability that no static image can show.</p>
+          </div>
+        </div>
+
+        <div class="dmx-point">
+          <div class="dmx-point-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div>
+            <h4>Quantified Instability</h4>
+            <p>Abnormal vertebral translation — the hallmark of ligament laxity — is measured in millimeters. The AMA Guides and established radiological standards define normal versus pathological thresholds, providing objective, defensible data.</p>
+          </div>
+        </div>
+
+        <div class="dmx-point">
+          <div class="dmx-point-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4>Only Available DMX in Mobile, AL</h4>
+            <p>Optimum Chiropractic Care operates the only Digital Motion X-Ray unit in the Mobile, Alabama region. Patients traveling from throughout the Gulf Coast region come specifically for this diagnostic capability.</p>
+          </div>
+        </div>
+
+        <div class="dmx-point">
+          <div class="dmx-point-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          </div>
+          <div>
+            <h4>Medico-Legal Documentation</h4>
+            <p>DMX findings produce reportable, reproducible, and court-admissible data on spinal ligament injury. Dr. Moore provides comprehensive reports suitable for insurance claims, personal injury litigation, and workers' compensation proceedings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="cta-inner">
+    <h2 id="cta-heading">Have You Been in an Accident?</h2>
+    <p>Do not wait for symptoms to worsen. Early evaluation provides the clearest clinical picture, the best treatment outcomes, and the strongest foundation for any related legal or insurance claim. Dr. Moore accepts new patients throughout the Mobile Bay area.</p>
+    <a href="contact.html" class="btn-white">Request an Evaluation</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo">Optimum <span>Chiropractic</span></div>
+        <p class="footer-brand-desc">Advanced chiropractic care, spinal trauma diagnosis, and independent medical examination services in Mobile, Alabama.</p>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>7681 Old Shell Rd., Mobile, AL 36608</span>
+        </div>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.64 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.55 1.07h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
+          <span>(251) 281-8768</span>
+        </div>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>drmoore@optimumchiropracticcare.com</span>
+        </div>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About Dr. Moore</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="whiplash.html">Whiplash &amp; Trauma</a></li>
+          <li><a href="for-attorneys.html">For Attorneys</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">New Patient</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Hours</p>
+        <ul class="footer-links">
+          <li><span style="color: rgba(248,245,239,0.68)">Mon–Thu: 8–11:30am &amp; 3–6:30pm</span></li>
+          <li><span style="color: rgba(248,245,239,0.68)">Fri: 8–11:30am &amp; 2–5pm</span></li>
+          <li><span style="color: rgba(248,245,239,0.68)">Phone available anytime</span></li>
+          <li style="margin-top: 8px;"><span style="color: rgba(248,245,239,0.45); font-size: 0.82rem">Saturday – Sunday: Closed</span></li>
+        </ul>
+        <p class="footer-heading" style="margin-top: 28px;">Dr. Jordan Moore</p>
+        <ul class="footer-links">
+          <li><span style="color: rgba(248,245,239,0.68); font-size: 0.84rem">DC · FPSC · CICE · MACIME</span></li>
+          <li><span style="color: rgba(248,245,239,0.68); font-size: 0.84rem">CPIS · Diplomate Candidate DIANM</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Optimum Chiropractic Care. All rights reserved.</p>
+      <p class="footer-copy">optimumchiropracticcare.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

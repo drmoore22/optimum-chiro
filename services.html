@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chiropractic Services | Optimum Chiropractic Care Mobile AL</title>
+  <meta name="description" content="Advanced clinical services at Optimum Chiropractic Care in Mobile, AL — Digital Motion X-Ray, shockwave therapy, Class 4 laser, spinal decompression, AOMSI reports, and more." />
+  <link rel="canonical" href="https://optimumchiropracticcare.com/services.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --charcoal: #1e2228;
+      --teal: #2a7a6f;
+      --teal-light: #3a9a8d;
+      --gold: #c9a84c;
+      --gold-light: #e0c06a;
+      --cream: #f8f5ef;
+      --white: #ffffff;
+      --text: #2c3038;
+      --text-muted: #6b7280;
+      --border: #e5e1d8;
+      --bg: var(--white);
+      --fg: var(--text);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --charcoal: #141720;
+        --cream: #1a1d24;
+        --white: #1e2228;
+        --text: #e8e4dc;
+        --text-muted: #9ca3af;
+        --border: #2e3340;
+        --bg: #141720;
+        --fg: #e8e4dc;
+        color-scheme: dark;
+      }
+    }
+    :root[data-theme="dark"] {
+      --charcoal: #141720;
+      --cream: #1a1d24;
+      --white: #1e2228;
+      --text: #e8e4dc;
+      --text-muted: #9ca3af;
+      --border: #2e3340;
+      --bg: #141720;
+      --fg: #e8e4dc;
+      color-scheme: dark;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; color: var(--fg); background: var(--bg); line-height: 1.6; }
+    h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+    img { max-width: 100%; }
+
+    /* NAV */
+    nav { background: #1e2228; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 68px; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 100; }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; color: #ffffff; font-size: 1.25rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 400; letter-spacing: 0.03em; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a.active { color: var(--gold); }
+    .nav-cta { background: var(--teal); color: #ffffff !important; padding: 0.5rem 1.25rem; border-radius: 4px; font-weight: 500 !important; }
+    .nav-cta:hover { background: var(--teal-light) !important; }
+
+    /* PAGE HEADER */
+    .page-header { background: #1e2228; color: #ffffff; padding: 4rem 2rem 3.5rem; }
+    .page-header-inner { max-width: 1200px; margin: 0 auto; }
+    .page-eyebrow { font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.75rem; }
+    .page-header h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; line-height: 1.15; color: #ffffff; margin-bottom: 1rem; text-wrap: balance; }
+    .page-header p { font-size: 1.05rem; color: rgba(255,255,255,0.7); max-width: 640px; line-height: 1.7; }
+
+    /* SERVICES */
+    .services-section { padding: 4rem 2rem; }
+    .services-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 4rem; }
+
+    .service-block { display: grid; grid-template-columns: 1fr 340px; gap: 3.5rem; align-items: center; padding: 2.5rem; border: 1px solid var(--border); border-radius: 10px; background: var(--white); }
+    .service-block:nth-child(even) { grid-template-columns: 340px 1fr; }
+    .service-block:nth-child(even) .service-visual { order: -1; }
+
+    .service-num { font-family: 'Cormorant Garamond', serif; font-size: 0.85rem; color: var(--gold); letter-spacing: 0.1em; font-weight: 600; margin-bottom: 0.35rem; }
+    .service-tag { display: inline-block; background: rgba(42,122,111,0.1); color: var(--teal); font-size: 0.7rem; padding: 0.2rem 0.65rem; border-radius: 12px; margin-bottom: 0.75rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+    .service-block h2 { font-size: 1.7rem; font-weight: 600; color: var(--charcoal); margin-bottom: 1rem; line-height: 1.2; text-wrap: balance; }
+    .service-body { display: flex; flex-direction: column; gap: 0; }
+    .service-block p { font-size: 0.93rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 0.9rem; }
+    .service-block p:last-child { margin-bottom: 0; }
+
+    .service-visual { display: flex; align-items: center; justify-content: center; background: var(--cream); border-radius: 8px; overflow: hidden; min-height: 280px; }
+    .service-visual svg { max-width: 100%; height: auto; }
+    .service-visual img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 280px; }
+    .service-visual.diagram img { object-fit: contain; background: #ffffff; padding: 1rem; }
+
+    /* HIGHLIGHT BAND */
+    .highlight-band { background: var(--teal); color: #ffffff; padding: 1rem 2rem; }
+    .highlight-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 1.5rem; }
+    .highlight-icon { flex-shrink: 0; }
+    .highlight-band strong { font-size: 0.9rem; font-weight: 600; }
+    .highlight-band span { font-size: 0.85rem; color: rgba(255,255,255,0.8); }
+
+    /* CTA BAND */
+    .cta-band { background: #1e2228; color: #ffffff; text-align: center; padding: 4rem 2rem; }
+    .cta-band h2 { font-size: clamp(1.75rem, 3vw, 2.4rem); color: #ffffff; margin-bottom: 1rem; }
+    .cta-band p { color: rgba(255,255,255,0.7); margin-bottom: 2rem; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+    .btn-primary { background: var(--teal); color: #ffffff; padding: 0.875rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: background 0.2s; display: inline-block; }
+    .btn-primary:hover { background: var(--teal-light); }
+
+    /* FOOTER */
+    footer { background: #1e2228; color: rgba(255,255,255,0.6); padding: 3rem 2rem; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; color: #ffffff; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .footer-logo span { color: var(--gold); }
+    .footer-brand p { font-size: 0.875rem; line-height: 1.7; max-width: 300px; }
+    footer h4 { font-family: 'DM Sans', sans-serif; color: #ffffff; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2.5rem; padding-top: 1.5rem; font-size: 0.8rem; text-align: center; max-width: 1200px; margin-left: auto; margin-right: auto; }
+
+    @media (max-width: 900px) {
+      .service-block,
+      .service-block:nth-child(even) { grid-template-columns: 1fr; gap: 2rem; }
+      .service-block:nth-child(even) .service-visual { order: 0; }
+      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .nav-links { display: none; }
+      .highlight-inner { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    }
+    @media (max-width: 600px) {
+      .services-section { padding: 2.5rem 1rem; }
+      .service-block { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Optimum <span>Chiropractic</span></a>
+  <ul class="nav-links">
+    <li><a href="about.html">About Dr. Moore</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="whiplash.html">Whiplash &amp; Trauma</a></li>
+    <li><a href="for-attorneys.html">For Attorneys</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html" class="nav-cta">New Patient</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="page-eyebrow">Optimum Chiropractic Care · Mobile, AL</p>
+    <h1>Clinical Services</h1>
+    <p>Advanced diagnostic and therapeutic capabilities under one roof — from Mobile's only Digital Motion X-Ray to shockwave and Class 4 laser therapy.</p>
+  </div>
+</div>
+
+<div class="highlight-band">
+  <div class="highlight-inner">
+    <div class="highlight-icon">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <circle cx="14" cy="14" r="13" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+        <path d="M9 14l3.5 3.5L19 10" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div>
+      <strong>Mobile's Only Digital Motion X-Ray Facility</strong>
+      <span> &nbsp;·&nbsp; All services performed or supervised by Dr. Jordan Moore DC, FPSC, CICE, MACIME, CPIS</span>
+    </div>
+  </div>
+</div>
+
+<section class="services-section">
+  <div class="services-inner">
+
+    <!-- 1. Digital Motion X-Ray -->
+    <div class="service-block">
+      <div class="service-body">
+        <span class="service-tag">Diagnostic Imaging</span>
+        <h2>Digital Motion X-Ray</h2>
+        <p>Digital Motion X-Ray (DMX) is a fluoroscopic imaging modality that captures real-time video of the cervical and lumbar spine during active range of motion. Unlike static radiographs, which record a single frozen moment, DMX reveals the dynamic relationship between vertebral segments — including translational and angular instabilities that are invisible on conventional film. Optimum Chiropractic Care houses the only DMX unit in the Mobile, Alabama area.</p>
+        <p>In the clinical setting, DMX is invaluable for identifying ligamentous laxity following whiplash and trauma injuries. When spinal ligaments are stretched or torn, the facet capsules and intervertebral discs lose their stabilizing function, and the resulting abnormal intersegmental motion is captured frame by frame during the examination. This objective finding is documented against established normative values and AMA Guides criteria.</p>
+        <p>DMX studies are also highly relevant in medicolegal contexts, providing the kind of motion-based evidence that static imaging cannot offer. The examination is low-radiation and tolerated well by post-trauma patients. Reports include annotated video stills and quantitative measurements of segmental displacement.</p>
+      </div>
+      <div class="service-visual">
+        <img src="dmx-example.jpg" alt="Digital Motion X-Ray fluoroscopic image showing C4-C5 spinal instability — Optimum Chiropractic Care Mobile AL" loading="lazy">
+      </div>
+    </div>
+
+    <!-- 2. Shockwave Therapy -->
+    <div class="service-block">
+      <div class="service-body">
+        <span class="service-tag">Regenerative Therapy</span>
+        <h2>Shockwave Therapy (Duolith SD1 Ultra)</h2>
+        <p>Extracorporeal shockwave therapy (ESWT) delivers high-energy acoustic pressure waves into targeted musculoskeletal tissue. The Duolith SD1 Ultra — a premium Swiss-engineered platform — provides both focused and radial delivery modes, allowing clinically specific treatment across a wide range of presentations. Radial waves treat large surface areas such as the iliotibial band and thoracolumbar fascia, while focused waves penetrate precisely to deeper structures including the enthesis and calcific deposits.</p>
+        <p>The biological mechanisms of ESWT include cavitation-induced microtrauma that triggers neovascularization, stimulation of tenocyte proliferation and collagen synthesis, disruption of calcific deposits in the supraspinatus and Achilles tendons, and inhibition of substance P to reduce local pain signaling. Clinical applications include chronic Achilles and patellar tendinopathy, plantar fasciitis with heel spur, rotator cuff calcific tendinitis, lateral epicondylitis, trochanteric bursopathy, and myofascial trigger point inactivation.</p>
+        <p>Shockwave therapy is administered in short sessions of approximately 15–20 minutes, typically over a course of three to five treatments spaced one week apart. It is especially well-suited for patients who have not responded to conservative care and wish to avoid corticosteroid injection or surgical intervention.</p>
+      </div>
+      <div class="service-visual">
+        <img src="shockwave.jpg" alt="Shockwave therapy treatment — Duolith SD1 Ultra at Optimum Chiropractic Care Mobile AL" loading="lazy">
+      </div>
+    </div>
+
+    <!-- 3. Class 4 Laser -->
+    <div class="service-block">
+      <div class="service-body">
+        <span class="service-tag">Photobiomodulation</span>
+        <h2>Class 4 Laser Therapy (Aspen)</h2>
+        <p>Class 4 laser therapy uses concentrated near-infrared and visible-red photons delivered at therapeutic power levels to penetrate skin, subcutaneous fat, and deep musculature. The Aspen system operates within wavelengths proven to activate cytochrome c oxidase in the mitochondrial electron transport chain — triggering a cascade of cellular repair processes including increased ATP production, modulation of reactive oxygen species, and upregulation of growth factors such as VEGF and TGF-β.</p>
+        <p>The clinical result is a combination of analgesic, anti-inflammatory, and tissue-regenerative effects. Acute applications include reduction of post-traumatic edema, pain modulation in the acute phase of whiplash-associated disorders, and acceleration of tissue healing after soft tissue injury. Chronic applications include management of osteoarthritic joint pain, myofascial pain syndrome, disc herniations with radiculopathy, and peripheral neuropathic pain.</p>
+        <p>Treatment is non-invasive, painless (patients often perceive only a gentle warmth), and completed in 8–12 minutes per area. Class 4 laser delivers significantly higher power densities than Class 3B devices, enabling deeper tissue penetration and greater photon dose delivery in shorter session durations.</p>
+      </div>
+      <div class="service-visual">
+        <img src="aspen-laser.jpg" alt="Aspen Class 4 laser therapy treatment — Optimum Chiropractic Care Mobile AL" loading="lazy">
+      </div>
+    </div>
+
+    <!-- 4. Spinal Decompression -->
+    <div class="service-block">
+      <div class="service-body">
+        <span class="service-tag">Non-Surgical Spine Care</span>
+        <h2>Spinal Decompression</h2>
+        <p>Computerized spinal decompression therapy uses a motorized traction table to apply carefully calibrated distraction forces across targeted spinal segments. By cycling between tension and relaxation phases, the treatment creates negative intradiscal pressure — a physiological environment that facilitates the retraction or repositioning of herniated nuclear material and promotes the diffusion of oxygen, nutrients, and fluids back into dehydrated and degenerated discs.</p>
+        <p>Clinical indications include disc herniations at cervical and lumbar levels, degenerative disc disease with or without radiculopathy, foraminal stenosis producing extremity symptoms, and posterior facet syndrome. Unlike passive traction, computerized decompression monitors patient resistance and adjusts the force curve dynamically, preventing the protective muscle guarding that limits the efficacy of traditional traction. Treatment protocols are individualized based on the segmental level involved, disc morphology on MRI, and the patient's symptom pattern.</p>
+        <p>A standard course involves 15–20 sessions of approximately 25–30 minutes each. The procedure is non-invasive, performed in the supine position, and typically well-tolerated. Dr. Moore coordinates decompression care with Class 4 laser and manual therapy to address periarticular soft tissue changes alongside the disc-level intervention.</p>
+      </div>
+      <div class="service-visual diagram">
+        <img src="spinal-decompression.jpg" alt="Spinal decompression therapy diagram showing disc pressure reduction — Optimum Chiropractic Care Mobile AL" loading="lazy">
+      </div>
+    </div>
+
+    <!-- 5. ArthroStim -->
+    <div class="service-block">
+      <div class="service-body">
+        <span class="service-tag">Instrument-Assisted</span>
+        <h2>ArthroStim Adjusting</h2>
+        <p>The ArthroStim is a precision chiropractic instrument that delivers a high-velocity, low-amplitude (HVLA) thrust at a controlled frequency of approximately 12 impulses per second. The rapid oscillation stimulates the joint mechanoreceptors and proprioceptive afferents — including Ruffini endings, Golgi tendon organs, and muscle spindle fibers — at a rate that facilitates neurological reset without the large force amplitude of a manual cavitation adjustment.</p>
+        <p>This makes the ArthroStim particularly well-suited for post-trauma patients, elderly patients with reduced bone density, or anyone who is apprehensive about audible manipulative techniques. The impulse frequency falls within the range most effective for stimulating joint afferent input and modulating the dorsal horn pain processing that contributes to central sensitization — a common complication in chronic whiplash-associated disorder.</p>
+        <p>The device's design allows precise application to individual spinal segments, extremity joints, and cranial sutures. It is equally effective on the cervical spine — where patient tolerance and physician confidence are paramount following acute trauma — and on peripheral joints including the wrist, ankle, and temporomandibular joint.</p>
+      </div>
+      <div class="service-visual">
+        <img src="arthrostim.jpg" alt="ArthroStim instrument adjusting — Optimum Chiropractic Care Mobile AL" loading="lazy">
+      </div>
+    </div>
+
+    <!-- 6. Chiropractic Adjustments -->
+    <div class="service-block">
+      <div class="service-body">
+        <span class="service-tag">Manual Therapy</span>
+        <h2>Chiropractic Adjustments</h2>
+        <p>Manual chiropractic manipulation — commonly referred to as a chiropractic adjustment — applies a precisely controlled, short-lever HVLA thrust to a restricted or hypomobile spinal or extremity joint. The goal is to restore normal joint arthrokinematics, reduce pain, and normalize afferent input from joint mechanoreceptors that modulates neuromuscular function throughout the kinetic chain. The characteristic audible "pop" that sometimes accompanies an adjustment reflects tribonucleation — the formation and rapid collapse of a gas bubble within the synovial fluid, not bone cracking.</p>
+        <p>Dr. Moore's adjustive approach is grounded in evidence-based biomechanical analysis. Each adjustment is preceded by motion palpation, orthopedic and neurological assessment, and in many cases static and dynamic radiographic evaluation. Treatment is never formulaic — the technique, position, and force vector are individualized to the patient's segmental findings and clinical presentation. Cervical, thoracic, lumbar, sacroiliac, and extremity adjustments are performed as clinically indicated.</p>
+        <p>Manual adjusting is integrated with instrument-assisted techniques, soft tissue mobilization, and rehabilitative exercise in a multimodal treatment model that addresses both the passive and active stabilizing systems of the spine.</p>
+      </div>
+      <div class="service-visual">
+        <img src="adjustment.jpg" alt="Chiropractic adjustment — hands-on spinal manipulation at Optimum Chiropractic Care Mobile AL" loading="lazy">
+      </div>
+    </div>
+
+    <!-- 7. Kinesiology Taping -->
+    <div class="service-block">
+      <div class="service-body">
+        <span class="service-tag">Functional Support</span>
+        <h2>Kinesiology Taping</h2>
+        <p>Kinesiology tape is an elastic therapeutic tape applied to the skin overlying muscles, tendons, and fascia to influence the underlying soft tissues and neurosensory systems. Unlike rigid athletic tape that immobilizes a joint, kinesiology tape is designed to allow full range of motion while providing continuous proprioceptive and mechanoreceptive input to the central nervous system throughout movement. The tape's elasticity creates a gentle lifting effect on the skin, which is theorized to decompress subcutaneous tissues and facilitate lymphatic drainage in acute post-traumatic edema.</p>
+        <p>Clinical applications at Optimum Chiropractic Care include cervical postural facilitation following whiplash injury, shoulder girdle support during rehabilitation after rotator cuff strain, lumbar stabilization during early-phase exercise progression, and extremity taping for ankle, knee, and wrist instability. Taping technique is selected based on the desired physiological mechanism: muscle facilitation or inhibition, fascial correction, lymphatic decongestion, or joint decompression.</p>
+        <p>Kinesiology tape is used as an adjunct to, not a replacement for, active rehabilitation. Dr. Moore prescribes specific taping applications as part of each patient's individualized home management plan between treatment sessions.</p>
+      </div>
+      <div class="service-visual">
+        <img src="ktape.jpg" alt="Kinesiology taping on knee — Optimum Chiropractic Care Mobile AL" loading="lazy">
+      </div>
+    </div>
+
+    <!-- 8. PT & Rehab -->
+    <div class="service-block">
+      <div class="service-body">
+        <span class="service-tag">Active Rehabilitation</span>
+        <h2>Physical Therapy &amp; Rehabilitation</h2>
+        <p>Therapeutic exercise and functional rehabilitation form the active stabilization component of care at Optimum Chiropractic Care. Passive treatments — adjustments, laser, shockwave, decompression — address the joint mechanics and tissue-level pathology; rehabilitation addresses the neuromuscular deficits, strength imbalances, and movement pattern dysfunctions that perpetuate injury and delay recovery if left unaddressed.</p>
+        <p>Dr. Moore designs injury-specific rehabilitation protocols that progress through defined phases: initial pain management and range-of-motion restoration; intermediate strengthening of deep stabilizers (multifidus, transverse abdominis, rotator cuff); and functional integration with proprioceptive training, neuromuscular re-education, and activity-specific movement patterns. Programs are adapted for post-traumatic patients recovering from motor vehicle injuries as well as for patients managing degenerative conditions, disc injuries, and repetitive strain disorders.</p>
+        <p>Exercises are taught in-office with proper technique instruction and home programming provided via written protocol sheets. Compliance with the active care component is correlated with outcomes: patients who engage consistently with their rehabilitation protocols demonstrate more durable resolution of symptoms and reduced recurrence rates compared to those who rely on passive care alone.</p>
+      </div>
+      <div class="service-visual">
+        <img src="pt-therapy.jpg" alt="Physical therapy rehabilitation — balance training at Optimum Chiropractic Care Mobile AL" loading="lazy">
+      </div>
+    </div>
+
+    <!-- 9. X-Ray Digitization & AOMSI -->
+    <div class="service-block">
+      <div class="service-body">
+        <span class="service-tag">Diagnostic &amp; Medicolegal</span>
+        <h2>X-Ray Digitization &amp; AOMSI Reports</h2>
+        <p>X-ray digitization is a computerized radiographic mensuration methodology that uses specialized software to precisely measure vertebral body angles, translational displacements, and intervertebral relationships from digitized plain-film or digital radiographs. When applied to lateral flexion-extension stress views of the cervical or lumbar spine, these measurements allow for quantification of abnormal intersegmental motion — data that forms the basis of Alteration of Motion Segment Integrity (AOMSI) determinations under the American Medical Association Guides to the Evaluation of Permanent Impairment, 5th edition.</p>
+        <p>AOMSI findings are clinically significant because ligamentous laxity — the structural basis of chronic instability following whiplash injury — is not visible on static imaging and is not captured by standard outcome measures. Computerized mensuration produces objective, reproducible measurements that exceed the reliability of manual radiographic assessment and are defensible under evidentiary scrutiny. Dr. Moore holds specialized training in X-ray digitization methodology and prepares detailed AOMSI reports documenting measured values against normative data tables, identifying any motion segments that meet the AMA Guides threshold for whole-person impairment.</p>
+        <p>These reports are prepared for treating physicians, independent medical examiners, and attorneys requiring objective documentation of ligament injury severity. Dr. Moore is available as a third-party examiner for cases where the treating chiropractor cannot serve in that role. Reports include raw mensuration data, methodology documentation, normative reference comparison, and a clearly stated impairment rating conclusion.</p>
+      </div>
+      <div class="service-visual diagram">
+        <img src="aomsi-report.jpg" alt="AOMSI vertebral angular segmental motion analysis report — Optimum Chiropractic Care Mobile AL" loading="lazy">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Schedule a Consultation</h2>
+  <p>Dr. Moore and his team are accepting new patients. Call the office directly or submit a new patient inquiry online.</p>
+  <a href="contact.html" class="btn-primary">Request an Appointment</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">Optimum <span>Chiropractic</span></div>
+      <p>Dr. Jordan Moore DC, FPSC, CICE, MACIME, CPIS<br>
+      7681 Old Shell Rd., Mobile, AL 36608<br>
+      (251) 281-8768 &nbsp;·&nbsp; drmoore@optimumchiropracticcare.com</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Dr. Moore</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="whiplash.html">Whiplash &amp; Trauma</a></li>
+        <li><a href="for-attorneys.html">For Attorneys</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">New Patient</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul class="footer-links">
+        <li>Mon–Thu: 8–11:30am &amp; 3–6:30pm</li>
+        <li>Fri: 8–11:30am &amp; 2–5pm</li>
+        <li>Phone: anytime</li>
+        <li>Saturday: By appointment</li>
+        <li>Sunday: Closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Optimum Chiropractic Care. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>About Dr. Jordan Moore DC, FPSC, CICE | Optimum Chiropractic Care Mobile AL</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap">
+<style>
+/* === DESIGN SYSTEM === */
+:root {
+  --charcoal: #1e2228;
+  --teal: #2a7a6f;
+  --teal-light: #3a9a8d;
+  --gold: #c9a84c;
+  --gold-light: #e0c06a;
+  --cream: #f8f5ef;
+  --white: #ffffff;
+  --text: #2c3038;
+  --text-muted: #6b7280;
+  --border: #e5e1d8;
+
+  /* Semantic tokens */
+  --bg: var(--cream);
+  --surface: var(--white);
+  --fg: var(--text);
+  --fg-muted: var(--text-muted);
+  --nav-bg: var(--charcoal);
+  --footer-bg: var(--charcoal);
+  --accent: var(--teal);
+  --accent-hover: var(--teal-light);
+  --highlight: var(--gold);
+  --card-border: var(--border);
+  --hero-overlay: rgba(30, 34, 40, 0.72);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171c;
+    --surface: #1e2228;
+    --fg: #e8e4dc;
+    --fg-muted: #9ca3af;
+    --card-border: #2e3340;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14171c;
+  --surface: #1e2228;
+  --fg: #e8e4dc;
+  --fg-muted: #9ca3af;
+  --card-border: #2e3340;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+/* === NAVIGATION === */
+.nav {
+  background: var(--nav-bg);
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 100;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  gap: 24px;
+}
+
+.nav-logo {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.nav-logo span { color: var(--gold); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.82);
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--gold-light); }
+
+.nav-links a.active { color: var(--gold); }
+
+.nav-cta {
+  background: var(--teal) !important;
+  color: var(--white) !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  transition: background 0.2s !important;
+}
+
+.nav-cta:hover { background: var(--teal-light) !important; color: var(--white) !important; }
+
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+  padding: 4px;
+}
+
+/* === HERO === */
+.hero {
+  background: var(--charcoal);
+  position: relative;
+  overflow: hidden;
+  padding: 80px 24px 72px;
+}
+
+.hero-bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 70% 50%, rgba(42,122,111,0.18) 0%, transparent 60%),
+    radial-gradient(circle at 10% 80%, rgba(201,168,76,0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 64px;
+  align-items: center;
+}
+
+.hero-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 500;
+  line-height: 1.12;
+  color: var(--white);
+  text-wrap: balance;
+  margin-bottom: 20px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.hero-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.cred-badge {
+  background: rgba(201,168,76,0.15);
+  border: 1px solid rgba(201,168,76,0.35);
+  color: var(--gold-light);
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.hero-desc {
+  color: rgba(248,245,239,0.78);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 13px 28px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.btn-primary:hover { background: var(--teal-light); }
+
+.btn-outline {
+  color: var(--gold-light);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 400;
+  padding: 12px 24px;
+  border: 1px solid rgba(201,168,76,0.4);
+  border-radius: 6px;
+  transition: border-color 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+.hero-photo-wrap {
+  position: relative;
+}
+
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: #2c3240;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(201,168,76,0.2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.hero-photo-fallback {
+  padding: 24px;
+  text-align: center;
+  color: rgba(248,245,239,0.4);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+}
+
+/* === MAIN CONTENT === */
+.section {
+  padding: 80px 24px;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-eyebrow {
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 14px;
+}
+
+.section h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  line-height: 1.18;
+  color: var(--fg);
+  text-wrap: balance;
+  margin-bottom: 24px;
+}
+
+.section-lead {
+  font-size: 1.08rem;
+  color: var(--fg-muted);
+  max-width: 680px;
+  line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+/* === CREDENTIAL TIMELINE === */
+.timeline {
+  position: relative;
+  padding-left: 36px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), var(--teal));
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item:last-child { margin-bottom: 0; }
+
+.timeline-dot {
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 0 3px var(--bg);
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+  border-color: var(--teal);
+}
+
+.timeline-year {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.timeline-item:nth-child(even) .timeline-year {
+  color: var(--teal-light);
+}
+
+.timeline-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 6px;
+}
+
+.timeline-desc {
+  font-size: 0.92rem;
+  color: var(--fg-muted);
+  line-height: 1.65;
+}
+
+/* === RESEARCH SECTION === */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.research-card {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.research-card-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(42,122,111,0.12);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.research-card-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--teal);
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.research-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 10px;
+}
+
+.research-card p {
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  line-height: 1.65;
+}
+
+/* === EQUIPMENT SECTION === */
+.equipment-section {
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.equipment-section .section-eyebrow { color: var(--gold); }
+.equipment-section .section h2 { color: var(--white); }
+.equipment-section .section-lead { color: rgba(248,245,239,0.72); }
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.equip-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(201,168,76,0.18);
+  border-radius: 8px;
+  padding: 28px 24px;
+  transition: border-color 0.2s;
+}
+
+.equip-card:hover {
+  border-color: rgba(201,168,76,0.42);
+}
+
+.equip-card-flag {
+  display: inline-block;
+  background: rgba(201,168,76,0.15);
+  border: 1px solid rgba(201,168,76,0.3);
+  color: var(--gold-light);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.equip-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.equip-card p {
+  font-size: 0.88rem;
+  color: rgba(248,245,239,0.68);
+  line-height: 1.65;
+}
+
+/* === CTA SECTION === */
+.cta-section {
+  background: var(--teal);
+  padding: 72px 24px;
+}
+
+.cta-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-inner h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+
+.cta-inner p {
+  color: rgba(255,255,255,0.82);
+  font-size: 1.05rem;
+  margin-bottom: 36px;
+}
+
+.btn-white {
+  background: var(--white);
+  color: var(--teal);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-white:hover {
+  background: var(--cream);
+}
+
+/* === FOOTER === */
+.footer {
+  background: var(--charcoal);
+  color: rgba(248,245,239,0.72);
+  padding: 56px 24px 32px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-brand-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
+.footer-brand-logo span { color: var(--gold); }
+
+.footer-brand-desc {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: rgba(248,245,239,0.6);
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.footer-contact-line {
+  font-size: 0.88rem;
+  color: rgba(248,245,239,0.72);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.footer-contact-line svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 1.8;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.footer-heading {
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: rgba(248,245,239,0.68);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--gold-light); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-copy {
+  font-size: 0.82rem;
+  color: rgba(248,245,239,0.45);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+  .hero-photo-wrap {
+    order: -1;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 68px;
+    left: 0; right: 0;
+    background: var(--charcoal);
+    padding: 16px 24px 24px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    z-index: 99;
+  }
+  .nav-hamburger { display: block; }
+  .nav { position: relative; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Optimum <span>Chiropractic</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="about.html" class="active">About Dr. Moore</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="whiplash.html">Whiplash &amp; Trauma</a></li>
+      <li><a href="for-attorneys.html">For Attorneys</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="nav-cta">New Patient</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-pattern" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Board-Certified Chiropractic Physician</p>
+      <h1>Dr. Jordan Moore<br><em>DC, FPSC, CICE</em></h1>
+      <div class="hero-credentials" aria-label="Credentials">
+        <span class="cred-badge">DC</span>
+        <span class="cred-badge">FPSC</span>
+        <span class="cred-badge">CICE</span>
+        <span class="cred-badge">MACIME</span>
+        <span class="cred-badge">CPIS</span>
+        <span class="cred-badge">Diplomate Candidate DIANM</span>
+        <span class="cred-badge">NIH Published</span>
+      </div>
+      <p class="hero-desc">
+        Dr. Moore brings rare clinical depth to chiropractic care in Mobile, Alabama — combining advanced spinal biomechanics training, NIH-published research, and specialized instrumentation found nowhere else in the region.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary">Schedule a Consultation</a>
+        <a href="whiplash.html" class="btn-outline">Whiplash &amp; Trauma Care</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="dr-moore.jpg" alt="Dr. Jordan Moore, DC" onerror="this.parentElement.innerHTML='<p class=\'hero-photo-fallback\'>Dr. Jordan Moore, DC</p>'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIAL TIMELINE -->
+<section class="section" aria-labelledby="credentials-heading">
+  <div class="section-inner">
+    <p class="section-eyebrow">Academic &amp; Clinical Training</p>
+    <h2 id="credentials-heading">A Career Built on<br>Advanced Specialization</h2>
+    <p class="section-lead">
+      Dr. Moore's training spans multiple post-doctoral fellowship programs, board certifications, and active research — a commitment to staying at the forefront of chiropractic science.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot" aria-hidden="true"></div>
+        <p class="timeline-year">Foundation</p>
+        <h3 class="timeline-title">Doctor of Chiropractic (DC)</h3>
+        <p class="timeline-desc">
+          Earned the Doctor of Chiropractic degree with comprehensive training in spinal biomechanics, neurology, orthopedics, diagnostic imaging, and rehabilitative care. Established the clinical foundation for specialized post-doctoral work.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot" aria-hidden="true"></div>
+        <p class="timeline-year">Post-Doctoral Fellowship</p>
+        <h3 class="timeline-title">FPSC — Fellow, Pediatric &amp; Spinal Care</h3>
+        <p class="timeline-desc">
+          Completed the Fellowship in Pediatric &amp; Spinal Care through Cleveland University–Kansas City and SUNY Jacobs School of Medicine. This rigorous program deepened clinical competency in pediatric spine, developmental biomechanics, and complex case management.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot" aria-hidden="true"></div>
+        <p class="timeline-year">Trauma Specialization</p>
+        <h3 class="timeline-title">CICE — Certified Independent Chiropractic Examiner</h3>
+        <p class="timeline-desc">
+          Credentialed as a Certified Independent Chiropractic Examiner, qualifying Dr. Moore to perform objective, third-party medical-legal evaluations of spinal injury — a standard recognized in insurance, litigation, and workers' compensation contexts throughout Alabama and the Gulf Coast region.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot" aria-hidden="true"></div>
+        <p class="timeline-year">Impairment Medicine</p>
+        <h3 class="timeline-title">MACIME — Member, American College of Independent Medical Examiners</h3>
+        <p class="timeline-desc">
+          Membership in ACIME reflects ongoing participation in the scientific community responsible for advancing standards in independent medical examination, impairment rating, and causation analysis.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot" aria-hidden="true"></div>
+        <p class="timeline-year">Spinal Imaging</p>
+        <h3 class="timeline-title">CPIS — Certified in Procedural Injection &amp; Spinal Imaging</h3>
+        <p class="timeline-desc">
+          Advanced certification in spinal imaging interpretation and procedural protocols. This credential directly supports Dr. Moore's use of Digital Motion X-Ray and advanced diagnostic imaging in the evaluation of ligamentous and disc injuries.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot" aria-hidden="true"></div>
+        <p class="timeline-year">Active Candidacy</p>
+        <h3 class="timeline-title">Diplomate Candidate DIANM — University of Bridgeport</h3>
+        <p class="timeline-desc">
+          Currently pursuing the Diplomate designation in Accident Neurological Medicine (DIANM) through the University of Bridgeport's College of Health Sciences. This program represents one of the highest levels of post-doctoral training in neurological and accident-related spinal medicine available to chiropractic physicians.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot" aria-hidden="true"></div>
+        <p class="timeline-year">Research</p>
+        <h3 class="timeline-title">NIH Published Researcher</h3>
+        <p class="timeline-desc">
+          Dr. Moore's research contributions have been recognized by the National Institutes of Health and archived in PubMed-indexed literature. This academic work bridges clinical practice with evidence-based science, informing treatment protocols for spinal ligament injury, trauma biomechanics, and cervical acceleration-deceleration injuries.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH & ACADEMIC -->
+<section class="section" style="background: var(--surface); border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border);" aria-labelledby="research-heading">
+  <div class="section-inner">
+    <p class="section-eyebrow">Research &amp; Academic Contributions</p>
+    <h2 id="research-heading">Evidence-Based Practice,<br>Grounded in the Literature</h2>
+    <p class="section-lead">
+      Dr. Moore's clinical work is informed by original research in spinal biomechanics and trauma medicine. His published work contributes to the growing body of evidence supporting objective measurement of ligamentous injury in motor vehicle accident victims.
+    </p>
+
+    <div class="research-grid">
+      <div class="research-card">
+        <div class="research-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 12h6M9 16h6M9 8h2M4 4h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+        </div>
+        <h3>NIH / PubMed Publications</h3>
+        <p>Research indexed in the National Library of Medicine's PubMed database, contributing to peer-reviewed literature on spinal injury measurement, ligament laxity quantification, and clinical outcomes in trauma patients.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-card-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3>Biomechanical Research</h3>
+        <p>Academic focus on the biomechanics of cervical acceleration-deceleration injury, including how forces transmit through the spinal column during rear-impact collisions and the resulting patterns of soft tissue damage.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Ligament Injury Quantification</h3>
+        <p>Research and clinical application of standardized metrics for quantifying spinal ligament injury using Dynamic Motion X-Ray analysis — providing objective, measurable data that meets medico-legal standards of evidence.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3>Clinical Education</h3>
+        <p>Active contributor to the continuing education community, sharing expertise in independent medical examination protocols, imaging interpretation, and the documentation standards required for complex spinal injury cases.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section class="equipment-section section" aria-labelledby="equipment-heading">
+  <div class="section-inner">
+    <p class="section-eyebrow">Clinical Technology</p>
+    <h2 id="equipment-heading">The Region's Most Advanced<br>Chiropractic Instrumentation</h2>
+    <p class="section-lead">
+      Dr. Moore has assembled a clinical technology suite that allows for precision diagnosis and treatment unavailable at the majority of chiropractic and even orthopedic practices in the region.
+    </p>
+
+    <div class="equipment-grid">
+      <div class="equip-card">
+        <span class="equip-card-flag">Only one in Mobile, AL</span>
+        <h3>Digital Motion X-Ray (DMX)</h3>
+        <p>
+          Fluoroscopic video imaging of the spine in real motion. Unlike static X-rays, Digital Motion X-Ray captures ligament instability, abnormal joint translation, and dynamic instability that is invisible on standard films — the gold standard for objectively documenting whiplash ligament injuries.
+        </p>
+      </div>
+
+      <div class="equip-card">
+        <span class="equip-card-flag">Advanced Shockwave</span>
+        <h3>Duolith SD1 Ultra</h3>
+        <p>
+          Storz Medical's flagship radial and focused shockwave therapy system. Delivers high-energy acoustic pulses that stimulate cellular repair in tendons, ligaments, and chronic soft tissue injuries — clinically proven for conditions resistant to conventional care.
+        </p>
+      </div>
+
+      <div class="equip-card">
+        <span class="equip-card-flag">High-Power Laser</span>
+        <h3>Aspen Class 4 Laser Therapy</h3>
+        <p>
+          Therapeutic photobiomodulation at clinical-grade power levels. Class 4 laser penetrates deeply into tissue to reduce inflammation, accelerate healing, and provide effective analgesia in acute and chronic musculoskeletal conditions.
+        </p>
+      </div>
+
+      <div class="equip-card">
+        <span class="equip-card-flag">Spinal Decompression</span>
+        <h3>Computerized Spinal Decompression</h3>
+        <p>
+          Computer-controlled axial distraction therapy that creates negative intradiscal pressure, drawing herniated or bulging disc material back toward center and relieving nerve root compression. An evidence-based alternative to surgical intervention for qualifying disc pathology.
+        </p>
+      </div>
+
+      <div class="equip-card">
+        <span class="equip-card-flag">Instrument-Assisted</span>
+        <h3>ArthroStim Adjusting Instrument</h3>
+        <p>
+          A precision chiropractic adjusting instrument delivering rapid, controlled impulses at 12–14 Hz — well within the body's natural neurological window for optimal joint receptor stimulation. Provides reproducible, low-force adjustment for patients who are not candidates for manual manipulation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="cta-inner">
+    <h2 id="cta-heading">Ready to Experience Expert Chiropractic Care?</h2>
+    <p>Dr. Moore accepts new patients at Optimum Chiropractic Care in Mobile, Alabama. Whether you're recovering from an accident, managing a chronic condition, or seeking a second opinion, we're ready to help.</p>
+    <a href="contact.html" class="btn-white">Request an Appointment</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo">Optimum <span>Chiropractic</span></div>
+        <p class="footer-brand-desc">Advanced chiropractic care, spinal trauma diagnosis, and independent medical examination services in Mobile, Alabama.</p>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>7681 Old Shell Rd., Mobile, AL 36608</span>
+        </div>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.64 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.55 1.07h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
+          <span>(251) 281-8768</span>
+        </div>
+        <div class="footer-contact-line">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>drmoore@optimumchiropracticcare.com</span>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About Dr. Moore</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="whiplash.html">Whiplash &amp; Trauma</a></li>
+          <li><a href="for-attorneys.html">For Attorneys</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">New Patient</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-heading">Hours</p>
+        <ul class="footer-links">
+          <li><span style="color: rgba(248,245,239,0.68)">Mon–Thu: 8–11:30am &amp; 3–6:30pm</span></li>
+          <li><span style="color: rgba(248,245,239,0.68)">Fri: 8–11:30am &amp; 2–5pm</span></li>
+          <li><span style="color: rgba(248,245,239,0.68)">Phone available anytime</span></li>
+          <li style="margin-top: 8px;"><span style="color: rgba(248,245,239,0.45); font-size: 0.82rem">Saturday – Sunday: Closed</span></li>
+        </ul>
+        <p class="footer-heading" style="margin-top: 28px;">Credentials</p>
+        <ul class="footer-links">
+          <li><span style="color: rgba(248,245,239,0.68); font-size: 0.84rem">DC · FPSC · CICE · MACIME</span></li>
+          <li><span style="color: rgba(248,245,239,0.68); font-size: 0.84rem">CPIS · Diplomate Candidate DIANM</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Optimum Chiropractic Care. All rights reserved.</p>
+      <p class="footer-copy">optimumchiropracticcare.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

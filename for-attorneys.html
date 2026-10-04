@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expert Chiropractic Evaluation | Attorneys | Mobile, AL</title>
+  <meta name="description" content="Dr. Jordan Moore DC, FPSC, CICE, MACIME offers independent medical evaluations, AOMSI reports, Digital Motion X-Ray documentation, and narrative reports for attorneys in Mobile, AL." />
+  <link rel="canonical" href="https://optimumchiropracticcare.com/for-attorneys.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --charcoal: #1e2228;
+      --teal: #2a7a6f;
+      --teal-light: #3a9a8d;
+      --gold: #c9a84c;
+      --gold-light: #e0c06a;
+      --cream: #f8f5ef;
+      --white: #ffffff;
+      --text: #2c3038;
+      --text-muted: #6b7280;
+      --border: #e5e1d8;
+      --bg: #ffffff;
+      --fg: #2c3038;
+      --card-bg: #ffffff;
+      --cream-bg: #f8f5ef;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #141720;
+        --fg: #e8e4dc;
+        --card-bg: #1e2228;
+        --cream-bg: #1a1d24;
+        --text: #e8e4dc;
+        --text-muted: #9ca3af;
+        --border: #2e3340;
+        --charcoal: #0f1115;
+        --white: #1e2228;
+        --cream: #1a1d24;
+        color-scheme: dark;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #141720;
+      --fg: #e8e4dc;
+      --card-bg: #1e2228;
+      --cream-bg: #1a1d24;
+      --text: #e8e4dc;
+      --text-muted: #9ca3af;
+      --border: #2e3340;
+      --charcoal: #0f1115;
+      --white: #1e2228;
+      --cream: #1a1d24;
+      color-scheme: dark;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; color: var(--fg); background: var(--bg); line-height: 1.6; }
+    h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+    img { max-width: 100%; }
+
+    /* NAV */
+    nav { background: #1e2228; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 68px; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 100; }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; color: #ffffff; font-size: 1.25rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 400; letter-spacing: 0.03em; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a.active { color: var(--gold); }
+    .nav-cta { background: var(--teal); color: #ffffff !important; padding: 0.5rem 1.25rem; border-radius: 4px; font-weight: 500 !important; }
+    .nav-cta:hover { background: var(--teal-light) !important; }
+
+    /* PAGE HEADER */
+    .page-header { background: #1e2228; color: #ffffff; padding: 4.5rem 2rem 3.5rem; }
+    .page-header-inner { max-width: 1100px; margin: 0 auto; }
+    .page-eyebrow { font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.75rem; }
+    .page-header h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; line-height: 1.15; color: #ffffff; margin-bottom: 1rem; text-wrap: balance; }
+    .page-header .lead { font-size: 1.05rem; color: rgba(255,255,255,0.72); max-width: 680px; line-height: 1.75; }
+    .cred-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+    .cred-badge { background: rgba(201,168,76,0.14); border: 1px solid rgba(201,168,76,0.3); color: var(--gold-light); font-size: 0.72rem; padding: 0.28rem 0.7rem; border-radius: 20px; letter-spacing: 0.05em; }
+
+    /* SECTION BASE */
+    .content-section { padding: 4.5rem 2rem; }
+    .content-section.alt-bg { background: var(--cream-bg); }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-eyebrow { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); font-weight: 600; margin-bottom: 0.65rem; }
+    .section-title { font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 600; color: var(--fg); margin-bottom: 1.25rem; line-height: 1.2; text-wrap: balance; }
+    .section-body p { font-size: 0.93rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem; }
+    .section-body p:last-child { margin-bottom: 0; }
+
+    /* TWO-COL LAYOUT */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .two-col-wide { display: grid; grid-template-columns: 1.4fr 1fr; gap: 4rem; align-items: start; }
+
+    /* ASIDE CARD */
+    .aside-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 2rem; }
+    .aside-card h4 { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); font-weight: 600; margin-bottom: 1.25rem; }
+    .credential-list { list-style: none; display: flex; flex-direction: column; gap: 0.9rem; }
+    .credential-list li { display: flex; gap: 0.85rem; align-items: flex-start; font-size: 0.875rem; }
+    .cred-dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; margin-top: 0.35rem; flex-shrink: 0; }
+    .credential-list strong { display: block; color: var(--fg); font-weight: 600; font-size: 0.875rem; line-height: 1.3; }
+    .credential-list span { display: block; color: var(--text-muted); font-size: 0.78rem; line-height: 1.5; margin-top: 0.1rem; }
+
+    /* SERVICE LIST */
+    .service-list { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; margin-top: 1.25rem; }
+    .service-list li { display: flex; gap: 0.75rem; align-items: flex-start; font-size: 0.9rem; color: var(--text-muted); }
+    .service-list li::before { content: ''; width: 6px; height: 6px; background: var(--teal); border-radius: 50%; margin-top: 0.55rem; flex-shrink: 0; }
+
+    /* DIVIDER */
+    .section-rule { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+    /* DMX HIGHLIGHT */
+    .dmx-highlight { background: #1e2228; color: #ffffff; border-radius: 10px; padding: 2.5rem; margin-top: 2rem; }
+    .dmx-highlight h3 { font-size: 1.35rem; color: var(--gold-light); margin-bottom: 0.75rem; }
+    .dmx-highlight p { font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.78; margin-bottom: 0.8rem; }
+    .dmx-highlight p:last-child { margin-bottom: 0; }
+    .dmx-stat-row { display: flex; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap; }
+    .dmx-stat { border-left: 2px solid var(--gold); padding-left: 1rem; }
+    .dmx-stat strong { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--gold); }
+    .dmx-stat span { font-size: 0.78rem; color: rgba(255,255,255,0.6); }
+
+    /* FORENSIC REPORT IMAGE */
+    .forensic-img-wrap { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); margin-bottom: 2.5rem; box-shadow: 0 4px 32px rgba(0,0,0,0.12); }
+    .forensic-img-wrap img { width: 100%; display: block; }
+    .forensic-img-caption { font-size: 0.75rem; color: var(--text-muted); padding: 0.65rem 1rem; background: var(--cream-bg); border-top: 1px solid var(--border); letter-spacing: 0.02em; }
+
+    /* REPORT ANATOMY */
+    .report-anatomy { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 2rem; margin-top: 1.5rem; }
+    .report-anatomy h4 { font-family: 'DM Sans', sans-serif; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); font-weight: 600; margin-bottom: 1.25rem; }
+    .report-item { display: flex; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.875rem; }
+    .report-item:last-child { border-bottom: none; }
+    .report-num { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); font-weight: 600; min-width: 1.5rem; }
+    .report-item-text strong { display: block; color: var(--fg); font-weight: 500; margin-bottom: 0.1rem; }
+    .report-item-text span { color: var(--text-muted); font-size: 0.82rem; }
+
+    /* LOP NOTICE */
+    .lop-notice { background: rgba(42,122,111,0.08); border: 1px solid rgba(42,122,111,0.25); border-radius: 8px; padding: 1.5rem 2rem; margin-top: 1.5rem; display: flex; gap: 1.25rem; align-items: flex-start; }
+    .lop-icon { flex-shrink: 0; margin-top: 0.1rem; }
+    .lop-notice p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+    .lop-notice strong { color: var(--fg); }
+
+    /* CONTACT SECTION */
+    .contact-section { background: var(--charcoal); color: #ffffff; padding: 5rem 2rem; }
+    .contact-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .contact-section h2 { font-size: clamp(1.75rem, 3vw, 2.4rem); color: #ffffff; margin-bottom: 1rem; text-wrap: balance; }
+    .contact-section p { color: rgba(255,255,255,0.68); line-height: 1.75; font-size: 0.93rem; }
+    .contact-details { margin-top: 1.75rem; display: flex; flex-direction: column; gap: 1rem; }
+    .contact-row { display: flex; gap: 0.75rem; align-items: flex-start; }
+    .contact-label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 600; min-width: 72px; margin-top: 0.1rem; }
+    .contact-val { font-size: 0.9rem; color: rgba(255,255,255,0.8); }
+    .contact-form-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 2.5rem; }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label { display: block; font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.6); margin-bottom: 0.4rem; letter-spacing: 0.03em; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea { width: 100%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 5px; padding: 0.6rem 0.85rem; color: #ffffff; font-family: 'DM Sans', sans-serif; font-size: 0.875rem; transition: border-color 0.2s; }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { outline: none; border-color: var(--teal); }
+    .form-group select option { background: #1e2228; color: #ffffff; }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .btn-submit { background: var(--teal); color: #ffffff; border: none; padding: 0.875rem 2rem; border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 500; cursor: pointer; transition: background 0.2s; width: 100%; }
+    .btn-submit:hover { background: var(--teal-light); }
+
+    /* FOOTER */
+    footer { background: #1e2228; color: rgba(255,255,255,0.6); padding: 3rem 2rem; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; color: #ffffff; font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .footer-logo span { color: var(--gold); }
+    .footer-brand p { font-size: 0.875rem; line-height: 1.7; max-width: 300px; }
+    footer h4 { font-family: 'DM Sans', sans-serif; color: #ffffff; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2.5rem; padding-top: 1.5rem; font-size: 0.8rem; text-align: center; max-width: 1200px; margin-left: auto; margin-right: auto; }
+
+    @media (max-width: 900px) {
+      .two-col, .two-col-wide, .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .nav-links { display: none; }
+      .dmx-stat-row { gap: 1.25rem; }
+    }
+    @media (max-width: 600px) {
+      .content-section { padding: 3rem 1rem; }
+      .contact-section { padding: 3rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Optimum <span>Chiropractic</span></a>
+  <ul class="nav-links">
+    <li><a href="about.html">About Dr. Moore</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="whiplash.html">Whiplash &amp; Trauma</a></li>
+    <li><a href="for-attorneys.html" class="active">For Attorneys</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html" class="nav-cta">New Patient</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="page-eyebrow">Clinical Resources for Legal Professionals</p>
+    <h1>For Attorneys &amp; Legal Professionals</h1>
+    <p class="lead">Dr. Jordan Moore provides independent medical evaluations, objective diagnostic documentation, and impairment-rating reports grounded in AMA Guides methodology — available to attorneys and case managers handling personal injury and workers' compensation matters in the Mobile area.</p>
+    <div class="cred-badges">
+      <span class="cred-badge">DC</span>
+      <span class="cred-badge">FPSC — Fellowship in Primary Spine Care</span>
+      <span class="cred-badge">CICE — Certified Independent Chiropractic Examiner</span>
+      <span class="cred-badge">MACIME — Member, ACIME</span>
+      <span class="cred-badge">CPIS</span>
+    </div>
+  </div>
+</div>
+
+<!-- Overview / Qualifications -->
+<section class="content-section">
+  <div class="section-inner">
+    <div class="two-col-wide">
+      <div class="section-body">
+        <p class="section-eyebrow">Clinical Qualifications</p>
+        <h2 class="section-title">Advanced Training in Independent Examination</h2>
+        <p>Not every chiropractor is qualified to perform an independent medical evaluation. The IME requires a set of clinical skills distinct from those used in treatment: objective examination without therapeutic intent, familiarity with AMA Guides impairment rating methodology, structured report writing to clinical and legal evidentiary standards, and the credentials to defend findings under deposition or testimony.</p>
+        <p>Dr. Moore holds the Certified Independent Chiropractic Examiner (CICE) designation — a post-graduate credential awarded by the American Board of Independent Medical Examiners — and is a member of the American College of Independent Medical Examiners (ACIME), where his Fellow designation (MACIME) reflects continued active involvement in the independent examination community. His Fellowship in Primary Spine Care (FPSC), awarded jointly by Cleveland University and SUNY Jacobs School of Medicine, reflects advanced academic training in spinal biomechanics, radiology, and the evaluation of post-traumatic spinal injury.</p>
+        <p>Dr. Moore performs examinations as a neutral third-party evaluator. His reports reflect the objective clinical findings and do not advocate for either party in the underlying matter.</p>
+      </div>
+      <div class="aside-card">
+        <h4>Credentials Relevant to Legal Work</h4>
+        <ul class="credential-list">
+          <li>
+            <div class="cred-dot"></div>
+            <div>
+              <strong>CICE</strong>
+              <span>Certified Independent Chiropractic Examiner — American Board of Independent Medical Examiners</span>
+            </div>
+          </li>
+          <li>
+            <div class="cred-dot"></div>
+            <div>
+              <strong>MACIME</strong>
+              <span>Member (Fellow), American College of Independent Medical Examiners</span>
+            </div>
+          </li>
+          <li>
+            <div class="cred-dot"></div>
+            <div>
+              <strong>FPSC</strong>
+              <span>Fellow in Spinal Care — Cleveland University / SUNY Jacobs School of Medicine and Biomedical Sciences</span>
+            </div>
+          </li>
+          <li>
+            <div class="cred-dot"></div>
+            <div>
+              <strong>CPIS</strong>
+              <span>Certified Posture and Injury Specialist</span>
+            </div>
+          </li>
+          <li>
+            <div class="cred-dot"></div>
+            <div>
+              <strong>Dip. Candidate, DIANM</strong>
+              <span>Diplomate Candidate in Acupuncture and Integrative Neuromuscular Medicine — University of Bridgeport</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule" />
+
+<!-- IME -->
+<section class="content-section alt-bg">
+  <div class="section-inner">
+    <div class="two-col">
+      <div class="section-body">
+        <p class="section-eyebrow">Independent Medical Evaluations</p>
+        <h2 class="section-title">What an IME Involves</h2>
+        <p>An Independent Medical Evaluation (IME) is a formal clinical examination performed by a credentialed examiner who has no prior treating relationship with the examinee. The purpose is to produce an objective, third-party clinical opinion on questions relevant to the legal matter — which may include the nature and extent of injury, the relationship between the injury and the reported mechanism, the appropriateness and necessity of treatment rendered, the existence of pre-existing conditions and their contribution to the current presentation, and the presence and degree of permanent impairment.</p>
+        <p>Dr. Moore conducts IMEs for chiropractic-scope injuries: cervical, thoracic, and lumbar spine; extremity joints; and soft tissue injuries including muscle, tendon, and ligamentous injuries. The examination includes a comprehensive history review, physical examination with range-of-motion measurement, orthopedic and neurological testing, and review of all available records and imaging.</p>
+        <p>A written report is delivered following the examination. Reports are prepared in a structured format that supports attorney review and, if necessary, use in depositions or trial testimony. Dr. Moore is available to testify as an expert witness.</p>
+        <ul class="service-list">
+          <li>Personal injury — motor vehicle collisions</li>
+          <li>Workers' compensation claims</li>
+          <li>Slip and fall and premises liability matters</li>
+          <li>Review of prior treatment records and imaging</li>
+          <li>Deposition testimony and expert witness services</li>
+        </ul>
+      </div>
+      <div>
+        <div class="aside-card">
+          <h4>What the IME Report Addresses</h4>
+          <div class="report-item">
+            <span class="report-num">01</span>
+            <div class="report-item-text">
+              <strong>Diagnosis</strong>
+              <span>Clinical diagnosis with ICD-10 coding based on examination findings and record review</span>
+            </div>
+          </div>
+          <div class="report-item">
+            <span class="report-num">02</span>
+            <div class="report-item-text">
+              <strong>Causation</strong>
+              <span>Whether the reported mechanism is consistent with the clinical presentation, within reasonable clinical certainty</span>
+            </div>
+          </div>
+          <div class="report-item">
+            <span class="report-num">03</span>
+            <div class="report-item-text">
+              <strong>Pre-existing Conditions</strong>
+              <span>Identification of prior degenerative or symptomatic conditions and their apportionment to the current findings</span>
+            </div>
+          </div>
+          <div class="report-item">
+            <span class="report-num">04</span>
+            <div class="report-item-text">
+              <strong>Treatment Appropriateness</strong>
+              <span>Review of treatments rendered — necessity, frequency, and clinical rationale</span>
+            </div>
+          </div>
+          <div class="report-item">
+            <span class="report-num">05</span>
+            <div class="report-item-text">
+              <strong>Impairment Rating</strong>
+              <span>Whole-person impairment rating per AMA Guides 5th edition, including AOMSI where applicable</span>
+            </div>
+          </div>
+          <div class="report-item">
+            <span class="report-num">06</span>
+            <div class="report-item-text">
+              <strong>Maximum Medical Improvement</strong>
+              <span>Whether the examinee has reached MMI, and prognosis for further recovery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule" />
+
+<!-- Narrative Reports -->
+<section class="content-section">
+  <div class="section-inner">
+    <p class="section-eyebrow">Clinical Documentation</p>
+    <h2 class="section-title">Narrative Reports</h2>
+    <div class="two-col">
+      <div class="section-body">
+        <p>Narrative medical reports serve a different purpose than the progress notes generated during routine clinical care. A narrative is a comprehensive, structured account of the patient's injury, clinical course, and current status — written to meet the documentation standards required for legal proceedings and medical-legal review.</p>
+        <p>Dr. Moore prepares narrative reports for his own patients as treating physician and, in appropriate cases, as an independent examiner engaged separately from the treating practice. Reports are referenced against clinical examination findings, radiographic and advanced imaging studies, and the medical literature. Impairment ratings are calculated using AMA Guides to the Evaluation of Permanent Impairment, 5th edition — the edition adopted by most state workers' compensation boards and courts for chiropractic impairment — with relevant tables and methodology cited within the report.</p>
+        <p>Reports are delivered in a format designed for attorney use: clearly organized sections, defined medical terminology with lay explanation where appropriate, and a distinct clinical impression and conclusion section. Turnaround time for a narrative report is typically ten business days from the date of final examination.</p>
+      </div>
+      <div class="section-body">
+        <div class="report-anatomy">
+          <h4>Standard Narrative Report Structure</h4>
+          <div class="report-item">
+            <span class="report-num">I</span>
+            <div class="report-item-text">
+              <strong>Referral Information &amp; Scope</strong>
+              <span>Identifying information, referral source, and scope of examination</span>
+            </div>
+          </div>
+          <div class="report-item">
+            <span class="report-num">II</span>
+            <div class="report-item-text">
+              <strong>Records Reviewed</strong>
+              <span>Enumerated list of all records and imaging reviewed prior to and during examination</span>
+            </div>
+          </div>
+          <div class="report-item">
+            <span class="report-num">III</span>
+            <div class="report-item-text">
+              <strong>History of Present Illness</strong>
+              <span>Mechanism of injury, symptom onset, progression, and prior treatment history</span>
+            </div>
+          </div>
+          <div class="report-item">
+            <span class="report-num">IV</span>
+            <div class="report-item-text">
+              <strong>Physical Examination Findings</strong>
+              <span>Objective findings: ROM measurements, orthopedic and neurological test results, palpation findings</span>
+            </div>
+          </div>
+          <div class="report-item">
+            <span class="report-num">V</span>
+            <div class="report-item-text">
+              <strong>Radiographic Analysis</strong>
+              <span>Review of plain films, MRI, CT, and — where available — Digital Motion X-Ray</span>
+            </div>
+          </div>
+          <div class="report-item">
+            <span class="report-num">VI</span>
+            <div class="report-item-text">
+              <strong>Clinical Impression &amp; Conclusions</strong>
+              <span>Diagnoses, causation opinion, MMI status, and impairment rating with methodology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule" />
+
+<!-- DMX for Litigation -->
+<section class="content-section alt-bg">
+  <div class="section-inner">
+    <p class="section-eyebrow">Objective Imaging</p>
+    <h2 class="section-title">Digital Motion X-Ray for Litigation</h2>
+    <div class="section-body">
+      <p>Ligamentous injury is the structural basis of chronic post-traumatic cervical instability, and it is a category of injury that standard imaging often fails to capture. Plain-film radiographs record a single frozen position; MRI depicts disc and cord morphology but is not a reliable indicator of dynamic ligamentous laxity. This creates an evidentiary gap that has historically made it difficult to objectively document the severity of whiplash-associated disorder in a format admissible in legal proceedings.</p>
+    </div>
+    <div class="dmx-highlight">
+      <h3>Bridging the Evidentiary Gap</h3>
+      <p>Digital Motion X-Ray is a fluoroscopic imaging modality that records video of the spine during active range of motion. When a cervical ligament — such as the alar, transverse atlantal, or capsular ligaments — is compromised by trauma, the resulting instability appears as abnormal translational or angular motion between vertebral segments during movement. This motion is invisible on static imaging and is captured only during dynamic examination.</p>
+      <p>At Optimum Chiropractic Care, DMX studies are performed on-site and produce frame-by-frame documentation of intersegmental motion. Measured values are compared against established normative data and AMA Guides reference ranges to determine whether an AOMSI finding exists. The resulting video and annotated still-frame evidence provides objective, visual documentation that can be reviewed by attorneys, opposing experts, and the trier of fact.</p>
+      <div class="dmx-stat-row">
+        <div class="dmx-stat">
+          <strong>Only DMX in Mobile</strong>
+          <span>Fluoroscopic motion imaging facility in the area</span>
+        </div>
+        <div class="dmx-stat">
+          <strong>AMA Guides Compliant</strong>
+          <span>Measurements referenced to 5th edition normative values</span>
+        </div>
+        <div class="dmx-stat">
+          <strong>Frame-by-Frame</strong>
+          <span>Video documentation with annotated still frames for reports</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule" />
+
+<!-- Forensic MRI Colorization -->
+<section class="content-section">
+  <div class="section-inner">
+    <div class="two-col">
+      <div class="section-body">
+        <p class="section-eyebrow">Forensic Imaging Analysis</p>
+        <h2 class="section-title">MRI Colorization &amp; Clinical Correlation</h2>
+        <p>Standard MRI images are presented in grayscale, which can make it difficult for non-radiologists — including attorneys, jurors, and adjusters — to visualize the specific pathology present. Dr. Moore offers forensic cervical imaging analysis that applies colorized overlays to MRI sequences, using a defined radiological key to highlight disc herniations, cord compression, epidural vein dilation, and bony structures in distinct colors.</p>
+        <p>Each forensic imaging report includes a written clinical correlation prepared by Dr. Moore, identifying the anatomical findings, their clinical significance, and their relationship to the reported mechanism of injury. The report is signed and attested by Dr. Moore as a board-certified examiner, and is prepared to evidentiary standards suitable for use in legal proceedings.</p>
+        <p>This service is available for existing MRI studies — no new imaging is required. Attorneys and case managers may submit DICOM files for review and receive a complete forensic imaging report with colorized exhibits and written clinical correlation.</p>
+      </div>
+      <div>
+        <div class="forensic-img-wrap">
+          <img src="forensic-mri-report.jpg" alt="Forensic Cervical Imaging Analysis and Clinical Correlation report by Dr. Jordan Moore — colorized MRI with radiological key" loading="lazy">
+          <p class="forensic-img-caption">Sample forensic cervical imaging analysis — colorized MRI with radiological key and written clinical correlation by Dr. Moore, FPSC, CICE, MACIME.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule" />
+
+<!-- AOMSI -->
+<section class="content-section alt-bg">
+  <div class="section-inner">
+    <div class="two-col">
+      <div class="section-body">
+        <p class="section-eyebrow">Impairment Rating</p>
+        <h2 class="section-title">X-Ray Digitization &amp; AOMSI Reports</h2>
+        <p>X-ray digitization uses specialized software to measure vertebral body angles and translational displacements from flexion-extension radiographic stress views with a precision that exceeds manual visual estimation. These measurements form the basis of Alteration of Motion Segment Integrity (AOMSI) determinations — a specific category of spinal impairment defined in the AMA Guides to the Evaluation of Permanent Impairment, 5th edition, that assigns whole-person impairment based on measured abnormal intersegmental motion.</p>
+        <p>AOMSI findings are significant in medicolegal matters because they represent objective, radiographically-derived evidence of ligamentous injury rather than subjective symptom reports. A measured finding that meets or exceeds the AMA Guides threshold for a given motion segment supports an impairment rating with a defensible methodological basis — one grounded in published normative data rather than clinical judgment alone.</p>
+        <p>Dr. Moore prepares AOMSI reports as both treating physician (for his own patients' treating record) and as an independent examiner engaged by attorneys or case managers for existing cases. Reports include the raw measurement data, methodology documentation, normative reference comparison, and a clearly stated impairment conclusion. Dr. Moore is available to testify regarding digitization methodology and AOMSI findings.</p>
+      </div>
+      <div>
+        <div class="aside-card">
+          <h4>AOMSI Report Contents</h4>
+          <ul class="credential-list">
+            <li>
+              <div class="cred-dot"></div>
+              <div>
+                <strong>Radiograph Description</strong>
+                <span>Date, view, technical quality assessment, and identification of all motion segments measured</span>
+              </div>
+            </li>
+            <li>
+              <div class="cred-dot"></div>
+              <div>
+                <strong>Measurement Methodology</strong>
+                <span>Software platform, measurement technique, and reliability documentation</span>
+              </div>
+            </li>
+            <li>
+              <div class="cred-dot"></div>
+              <div>
+                <strong>Raw Mensuration Data</strong>
+                <span>Angular and translational measurements for each motion segment evaluated, in tabular form</span>
+              </div>
+            </li>
+            <li>
+              <div class="cred-dot"></div>
+              <div>
+                <strong>Normative Reference Comparison</strong>
+                <span>Measured values compared against published normative ranges and AMA Guides thresholds</span>
+              </div>
+            </li>
+            <li>
+              <div class="cred-dot"></div>
+              <div>
+                <strong>Impairment Conclusion</strong>
+                <span>Whole-person impairment rating per AMA Guides 5th edition, section and table cited</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule" />
+
+<!-- LOP -->
+<section class="content-section alt-bg">
+  <div class="section-inner">
+    <p class="section-eyebrow">Financial Arrangements</p>
+    <h2 class="section-title">Letters of Protection</h2>
+    <div class="section-body">
+      <p>Optimum Chiropractic Care accepts Letters of Protection (LOP) from attorneys handling personal injury cases, allowing patients to receive necessary treatment while their legal matter is pending, with fees addressed at the time of case resolution. Acceptance of an LOP does not alter the clinical treatment decisions made on behalf of the patient — treatment is prescribed based on clinical indication, not case status.</p>
+    </div>
+    <div class="lop-notice">
+      <div class="lop-icon">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <circle cx="11" cy="11" r="10" stroke="#2a7a6f" stroke-width="1.5"/>
+          <path d="M11 7v5" stroke="#2a7a6f" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="11" cy="15.5" r="1" fill="#2a7a6f"/>
+        </svg>
+      </div>
+      <p><strong>To discuss LOP arrangements for a specific client,</strong> please contact the office directly. We are happy to coordinate with your office on the documentation required. Inquiries may be directed to Dr. Moore's office at (251) 281-8768 or drmoore@optimumchiropracticcare.com.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact-section">
+  <div class="contact-inner">
+    <div>
+      <p class="page-eyebrow" style="color:var(--gold);font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;font-weight:600;margin-bottom:0.65rem;">Attorney Inquiries</p>
+      <h2>Contact Dr. Moore's Office</h2>
+      <p>For IME scheduling, AOMSI report requests, record review, or any other medicolegal inquiry, please reach out directly. Dr. Moore's staff can discuss scope, timeline, and scheduling at your convenience.</p>
+      <div class="contact-details">
+        <div class="contact-row">
+          <span class="contact-label">Phone</span>
+          <span class="contact-val">(251) 281-8768</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Email</span>
+          <span class="contact-val">drmoore@optimumchiropracticcare.com</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Address</span>
+          <span class="contact-val">7681 Old Shell Rd., Mobile, AL 36608</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Hours</span>
+          <span class="contact-val">Mon–Thu 8–11:30am &amp; 3–6:30pm · Fri 8–11:30am &amp; 2–5pm · Phone anytime</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-card">
+      <p style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.5rem;">Send an Inquiry</p>
+      <form action="thank-you.html" method="get" onsubmit="this.action='thank-you.html'">
+        <div class="form-group">
+          <label for="atty-name">Your Name</label>
+          <input type="text" id="atty-name" name="name" placeholder="Attorney or firm name" />
+        </div>
+        <div class="form-group">
+          <label for="atty-email">Email</label>
+          <input type="email" id="atty-email" name="email" placeholder="you@yourfirm.com" />
+        </div>
+        <div class="form-group">
+          <label for="atty-phone">Phone</label>
+          <input type="tel" id="atty-phone" name="phone" placeholder="(000) 000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="atty-service">Type of Request</label>
+          <select id="atty-service" name="service">
+            <option value="">Select one…</option>
+            <option value="ime">Independent Medical Evaluation</option>
+            <option value="aomsi">AOMSI / X-Ray Digitization Report</option>
+            <option value="narrative">Narrative Report (Treating Patient)</option>
+            <option value="dmx">Digital Motion X-Ray</option>
+            <option value="lop">Letter of Protection Inquiry</option>
+            <option value="other">Other / General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="atty-message">Brief Description</label>
+          <textarea id="atty-message" name="message" placeholder="Case type, timeline, or any other details…"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Submit Inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">Optimum <span>Chiropractic</span></div>
+      <p>Dr. Jordan Moore DC, FPSC, CICE, MACIME, CPIS<br>
+      7681 Old Shell Rd., Mobile, AL 36608<br>
+      (251) 281-8768 &nbsp;·&nbsp; drmoore@optimumchiropracticcare.com</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Dr. Moore</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="whiplash.html">Whiplash &amp; Trauma</a></li>
+        <li><a href="for-attorneys.html">For Attorneys</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">New Patient</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul class="footer-links">
+        <li>Mon–Thu: 8–11:30am &amp; 3–6:30pm</li>
+        <li>Fri: 8–11:30am &amp; 2–5pm</li>
+        <li>Phone: anytime</li>
+        <li>Saturday: By appointment</li>
+        <li>Sunday: Closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Optimum Chiropractic Care. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    window.location.href = 'thank-you.html';
+  });
+</script>
+
+</body>
+</html>

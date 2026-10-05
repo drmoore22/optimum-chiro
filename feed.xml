@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Optimum Chiropractic Care Blog</title>
+  <link>https://optimumchiropracticcare.com/blog</link>
+  <atom:link href="https://optimumchiropracticcare.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Articles on whiplash, spinal trauma and recovery from Dr. Jordan Moore, Optimum Chiropractic Care, Mobile, AL.</description>
+  <language>en-us</language>
+  <item>
+    <title>Why You Should See a Chiropractor After a Car Accident — Even If You Feel Fine</title>
+    <link>https://optimumchiropracticcare.com/blog-feel-fine</link>
+    <guid isPermaLink="true">https://optimumchiropracticcare.com/blog-feel-fine</guid>
+    <pubDate>Sun, 04 Oct 2026 09:00:00 -0500</pubDate>
+    <description>Feeling okay after a car accident doesn't mean you're uninjured. Dr. Jordan Moore explains why delayed symptoms are common, what can be missed without an evaluation, and why waiting may cost you.</description>
+    <enclosure url="https://optimumchiropracticcare.com/blog-feelfine-header.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>What Happens to Your Spine in a Car Accident</title>
+    <link>https://optimumchiropracticcare.com/blog-car-accident</link>
+    <guid isPermaLink="true">https://optimumchiropracticcare.com/blog-car-accident</guid>
+    <pubDate>Thu, 01 Oct 2026 08:00:00 -0500</pubDate>
+    <description>A biomechanical explanation of spinal injury mechanisms in motor vehicle collisions — cervical acceleration-deceleration, soft tissue loading, and why early evaluation matters.</description>
+    <enclosure url="https://optimumchiropracticcare.com/blog-spine-header.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>What to Look for in a Chiropractor After a Car Accident</title>
+    <link>https://optimumchiropracticcare.com/blog-chiropractor-auto-accident</link>
+    <guid isPermaLink="true">https://optimumchiropracticcare.com/blog-chiropractor-auto-accident</guid>
+    <pubDate>Thu, 01 Oct 2026 07:00:00 -0500</pubDate>
+    <description>Not all chiropractic practices are equally equipped to evaluate and treat trauma patients. Here's what credentials, tools, and clinical experience actually matter.</description>
+    <enclosure url="https://optimumchiropracticcare.com/blog-chiro-header.jpg" type="image/jpeg" length="0"/>
+  </item>
+  <item>
+    <title>Why Whiplash Symptoms Are Often Delayed</title>
+    <link>https://optimumchiropracticcare.com/blog-whiplash-delayed</link>
+    <guid isPermaLink="true">https://optimumchiropracticcare.com/blog-whiplash-delayed</guid>
+    <pubDate>Thu, 01 Oct 2026 06:00:00 -0500</pubDate>
+    <description>Many patients feel fine immediately after a car accident — only to develop neck pain, headaches, or cognitive symptoms days later. Here's the clinical explanation.</description>
+    <enclosure url="https://optimumchiropracticcare.com/blog-whiplash-header.jpg" type="image/jpeg" length="0"/>
+  </item>
+</channel>
+</rss>

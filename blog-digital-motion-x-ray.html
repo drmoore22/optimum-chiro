@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Digital Motion X-Ray Explained: Seeing How the Spine Moves in Real Time | Optimum Chiropractic Care</title>
+  <meta property="og:image" content="https://optimumchiropracticcare.com/dmx-example.jpg" />
+  <meta name="description" content="A plain-language explanation of Digital Motion X-Ray: how video fluoroscopy records the spine in motion, what it can show that still images may not, who may be evaluated with it, and what to expect at a visit in Mobile, Alabama." />
+  <link rel="canonical" href="https://optimumchiropracticcare.com/blog-digital-motion-x-ray" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Digital Motion X-Ray Explained: Seeing How the Spine Moves in Real Time",
+    "description": "A plain-language explanation of Digital Motion X-Ray: how video fluoroscopy records the spine in motion, what it can show that still images may not, who may be evaluated with it, and what to expect at a visit in Mobile, Alabama.",
+    "url": "https://optimumchiropracticcare.com/blog-digital-motion-x-ray",
+    "datePublished": "2026-10-08",
+    "dateModified": "2026-10-08",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Jordan Moore",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "DC, FPSC, CICE, MACIME, CPIS",
+      "affiliation": {
+        "@type": "MedicalOrganization",
+        "name": "Optimum Chiropractic Care",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7681 Old Shell Rd.",
+          "addressLocality": "Mobile",
+          "addressRegion": "AL",
+          "postalCode": "36608"
+        }
+      }
+    },
+    "publisher": {
+      "@type": "MedicalOrganization",
+      "name": "Optimum Chiropractic Care",
+      "url": "https://optimumchiropracticcare.com"
+    },
+    "medicalAudience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
+    },
+    "about": {
+      "@type": "MedicalTest",
+      "name": "Digital Motion X-Ray (video fluoroscopy of the spine)"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is DMX the same as a regular X-ray?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both use X-rays, but a regular X-ray records a single still image. DMX records continuous video of the spine in motion, which allows movement between vertebrae to be observed and measured."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a DMX study hurt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The study itself is not painful. You are asked to move within a range you can comfortably manage, and the movements are adjusted if an injury makes certain positions difficult."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can DMX replace an MRI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. They answer different questions. MRI shows discs, nerves, and soft tissues, while DMX shows how the vertebrae move relative to one another. Your clinician will recommend studies only when they are likely to change the plan of care."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The imaging portion usually takes only a few minutes. A new patient visit also includes a history and examination, so plan on a full appointment. The findings are reviewed with you afterward."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there radiation exposure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Like any X-ray study, DMX uses ionizing radiation, which is why it is used only when the clinical question justifies it and is avoided during pregnancy. Ask your clinician about the exposure for your situation."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --charcoal: #1e2228;
+      --teal: #2a7a6f;
+      --teal-light: #3a9a8d;
+      --gold: #c9a84c;
+      --gold-light: #e0c06a;
+      --cream: #f8f5ef;
+      --white: #ffffff;
+      --text: #2c3038;
+      --text-muted: #6b7280;
+      --border: #e5e1d8;
+
+      --bg: var(--white);
+      --surface: var(--cream);
+      --fg: var(--text);
+      --fg-muted: var(--text-muted);
+      --rule: var(--border);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--charcoal);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 100;
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--white);
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta {
+      background: var(--teal) !important;
+      color: var(--white) !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 4px;
+      font-weight: 500 !important;
+    }
+    .nav-cta:hover { background: var(--teal-light) !important; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
+    .nav-hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--white); margin: 5px 0; transition: 0.2s;
+    }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      background: var(--charcoal);
+      padding: 4rem 2rem 3.5rem;
+    }
+    .article-header-inner {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    .article-breadcrumb {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .article-breadcrumb a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .article-breadcrumb a:hover { color: var(--gold); }
+    .article-breadcrumb svg { opacity: 0.4; }
+    .article-category {
+      display: inline-block;
+      background: rgba(42,122,111,0.3);
+      border: 1px solid rgba(42,122,111,0.5);
+      color: var(--teal-light);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0.3rem 0.85rem;
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+    }
+    .article-header h1 {
+      font-size: clamp(1.9rem, 4vw, 2.75rem);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      text-wrap: balance;
+    }
+    .article-header h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .meta-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .author-info { display: flex; flex-direction: column; gap: 0.1rem; }
+    .author-name {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--white);
+    }
+    .author-creds {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.04em;
+    }
+    .meta-divider {
+      width: 1px;
+      height: 28px;
+      background: rgba(255,255,255,0.15);
+    }
+    .meta-date {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .meta-read {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-layout {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 4rem;
+      align-items: start;
+    }
+    .article-body {
+      min-width: 0;
+    }
+    .article-body p {
+      font-size: 1.0rem;
+      line-height: 1.8;
+      color: var(--fg);
+      margin-bottom: 1.5rem;
+    }
+    .article-body p:last-of-type { margin-bottom: 0; }
+    .article-body h2 {
+      font-size: 1.65rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin: 2.75rem 0 1rem;
+      line-height: 1.25;
+      text-wrap: balance;
+    }
+    .article-body h2:first-child { margin-top: 0; }
+    .article-body h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin: 2rem 0 0.75rem;
+      line-height: 1.3;
+    }
+    .article-body ul, .article-body ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .article-body li {
+      font-size: 1.0rem;
+      line-height: 1.8;
+      color: var(--fg);
+      margin-bottom: 0.5rem;
+    }
+    .article-body strong { font-weight: 600; color: var(--charcoal); }
+
+    .article-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.75rem 0;
+    }
+
+    .callout {
+      background: var(--cream);
+      border-left: 3px solid var(--teal);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 6px 6px 0;
+      margin: 2rem 0;
+    }
+    .callout p {
+      font-size: 0.95rem !important;
+      color: var(--charcoal) !important;
+      margin-bottom: 0 !important;
+      line-height: 1.7 !important;
+    }
+    .callout strong { color: var(--teal) !important; }
+
+    /* ── AUTHOR BIO ── */
+    .author-bio {
+      background: var(--charcoal);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-top: 3rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+    .bio-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .bio-content { min-width: 0; }
+    .bio-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .bio-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+    .bio-title {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.85rem;
+      letter-spacing: 0.03em;
+    }
+    .bio-text {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.7;
+    }
+
+    /* ── SIDEBAR ── */
+    .article-sidebar {
+      position: sticky;
+      top: calc(68px + 2rem + env(safe-area-inset-top, 0px));
+    }
+    .sidebar-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .sidebar-card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+    }
+    .sidebar-cta {
+      display: block;
+      background: var(--teal);
+      color: var(--white);
+      text-align: center;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .sidebar-cta:hover { background: var(--teal-light); }
+    .sidebar-related-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .sidebar-related-list li a {
+      font-size: 0.875rem;
+      color: var(--teal);
+      text-decoration: none;
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      transition: color 0.2s;
+    }
+    .sidebar-related-list li a:hover { color: var(--charcoal); }
+    .sidebar-related-list li a::before {
+      content: '→';
+      flex-shrink: 0;
+      margin-top: 0.05em;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal);
+      padding: 3.5rem 2rem 2.5rem;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 2.5rem;
+    }
+    .footer-brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+    .footer-brand-name span { color: var(--gold); }
+    .footer-brand-text {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .footer-contact {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.9;
+    }
+    .footer-heading {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .footer-links a {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 1.5rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .article-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .article-sidebar {
+        position: static;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: block; }
+      .article-header { padding: 2.5rem 1.25rem 2.5rem; }
+      .article-layout { padding: 2.5rem 1.25rem 3.5rem; }
+      .footer-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+      .author-bio { flex-direction: column; gap: 1rem; }
+    }
+
+    .article-figure { margin: 0 0 2rem; }
+    .article-figure img { width: 100%; height: auto; display: block; border-radius: 10px; aspect-ratio: 16 / 9; object-fit: cover; }
+    .article-figure.inline img { aspect-ratio: 3 / 2; }
+    .article-figure figcaption { font-size: 0.78rem; color: var(--text-muted, #6b6b66); margin-top: 0.6rem; line-height: 1.5; }
+    .article-body .author-bio .bio-text { color: rgba(255,255,255,0.88); font-size: 0.92rem; line-height: 1.75; margin-bottom: 0; }
+    .article-body .author-bio .bio-title { color: rgba(255,255,255,0.78); }
+  </style>
+  <link rel="alternate" type="application/rss+xml" title="Optimum Chiropractic Care Blog" href="/feed.xml">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Site navigation">
+    <a href="/" class="nav-logo">Optimum <span>Chiropractic</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="/about">About Dr. Moore</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/whiplash">Whiplash &amp; Trauma</a></li>
+      <li><a href="/for-attorneys">For Attorneys</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact" class="nav-cta">New Patient</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ARTICLE HEADER -->
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="/">Home</a>
+        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M1 1l6 5-6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <a href="/blog">Blog</a>
+        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M1 1l6 5-6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>Diagnostic Imaging</span>
+      </div>
+      <div class="article-category">Diagnostic Imaging</div>
+      <h1>Digital Motion X-Ray Explained: <em>Seeing How the Spine Moves in Real Time</em></h1>
+      <div class="article-meta">
+        <div class="meta-author">
+          <div class="author-avatar">JM</div>
+          <div class="author-info">
+            <span class="author-name">Dr. Jordan Moore</span>
+            <span class="author-creds">DC, FPSC, CICE, MACIME, CPIS</span>
+          </div>
+        </div>
+        <div class="meta-divider"></div>
+        <span class="meta-date">October 8, 2026</span>
+        <div class="meta-divider"></div>
+        <span class="meta-read">6 min read</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ARTICLE LAYOUT -->
+  <div class="article-layout">
+
+    <!-- BODY -->
+    <article class="article-body">
+      <figure class="article-figure inline"><img src="dmx-example.jpg" alt="Digital Motion X-Ray frame of the cervical spine with measurement markers placed on each vertebra" width="611" height="562" loading="eager" decoding="async" style="aspect-ratio:auto;object-fit:contain;max-width:520px;margin:0 auto;background:#0f1115;" /><figcaption style="text-align:center;">Example of a Digital Motion X-Ray frame with measurement markers placed on each vertebral segment.</figcaption></figure>
+
+      <h2>Why a Still Picture Can Miss the Problem</h2>
+      <p>Most spinal imaging is a snapshot. A standard X-ray freezes the spine in one position, and an MRI shows the discs, nerves, and soft tissues while you lie still. Both are valuable and both are used every day. But the spine is a moving structure, and some problems show up only when it moves. A vertebra that glides farther than it should, or a segment that stays stiff while its neighbors compensate, can look unremarkable on a picture taken at rest.</p>
+      <p>This matters most after an injury. Ligaments help hold the vertebrae in alignment as you bend and turn. When they are stretched or torn, the spine can look normal in a still image while its motion tells a different story. This article explains what Digital Motion X-Ray (DMX) is and when it may be useful. It is educational information, not a recommendation for any one person.</p>
+
+      <h2>What Digital Motion X-Ray Is</h2>
+      <p>DMX is a form of video fluoroscopy. Fluoroscopy uses X-rays to produce a continuous image instead of a single frame, and it is widely used in medicine to watch structures move, from swallowing studies to guiding joint injections. In spinal DMX, the neck or low back is recorded on digital video while you move through a set of positions, such as bending forward and backward. The recording is then reviewed frame by frame, and measurements can be made between neighboring vertebrae.</p>
+
+      <h3>What Is Being Measured</h3>
+      <p>The central question is how each spinal segment moves in relation to the one above and the one below it. Reviewers look at how far a vertebra slides (translation), how much it tilts (rotation), and whether the movement is smooth and well coordinated through the full arc of motion. Those values can then be compared with published reference ranges.</p>
+
+      <h2>What the Recording May Show</h2>
+      <p>Depending on the patient, a motion study may help identify:</p>
+      <ul>
+        <li>A segment that moves more than expected, which can suggest ligament laxity or instability</li>
+        <li>A segment that moves less than expected, which can point to restriction or guarding</li>
+        <li>Motion that is uncoordinated or out of sequence between levels</li>
+        <li>Differences between what a still image suggests and how the spine actually behaves during movement</li>
+      </ul>
+      <p>Not every finding explains a person's pain, and many people have measurable variations without any symptoms. Results are interpreted together with your history and examination, never on their own. The research on motion imaging continues to develop, and clinicians differ in how they apply it.</p>
+
+      <div class="callout">
+        <p><strong>Worth knowing:</strong> DMX does not replace MRI or other imaging. MRI is better suited to discs, nerves, the spinal cord, and soft tissues, while DMX addresses a different question: how the spine moves. Some patients need one, some need both, and many need neither.</p>
+      </div>
+
+      <h2>Who May Be Evaluated With It</h2>
+      <p>DMX is not a routine test for every episode of neck or back pain. It is more often considered when:</p>
+      <ul>
+        <li>Neck or back pain has persisted after a collision, fall, or other trauma</li>
+        <li>Symptoms such as a feeling of instability, catching, or pain with specific movements are not explained by standard imaging</li>
+        <li>Findings on examination suggest a motion problem that a still image cannot confirm</li>
+        <li>A clear, objective record of spinal motion would help guide the plan of care</li>
+      </ul>
+      <p>Whether it makes sense for you depends on your history and examination, which is why those come first.</p>
+
+      <h2>What a Visit Typically Involves</h2>
+      <ol>
+        <li>Your history and a physical examination come first, along with a discussion of whether a motion study is likely to answer a useful question.</li>
+        <li>If it is appropriate, you are positioned at the imaging unit and guided through a short series of movements, usually bending forward and backward within what you can comfortably manage.</li>
+        <li>The movement is recorded as digital video. The imaging portion itself usually takes only a few minutes.</li>
+        <li>The recording is reviewed and measured, and the findings are explained to you in plain language along with what they may mean for your care.</li>
+      </ol>
+      <p>Because DMX uses X-rays, it is used when the clinical question justifies it, and it is not performed during pregnancy. Tell your clinician if you are or may be pregnant before any imaging.</p>
+
+      <h2>Where Dr. Moore's Training Fits</h2>
+      <p>Optimum Chiropractic Care has the only Digital Motion X-Ray in Mobile. Dr. Moore is a Fellow in Primary Spine Care (FPSC) and has completed radiology mini-fellowships through SUNY Jacobs in neuroradiology, advanced MRI of the spine, and musculoskeletal radiology, along with specialized training in X-ray digitization methodology. In practice, that background helps him decide when motion imaging is likely to add useful information and when a different study, or no imaging at all, is the better choice. You can read more on the <a href="/about">About page</a> and the <a href="/services">Services page</a>. Patients who are recovering from a collision may also find the <a href="/whiplash">whiplash and trauma</a> page helpful.</p>
+
+      <hr class="article-rule" />
+
+      <h2>Common Questions</h2>
+      <h3>Is DMX the same as a regular X-ray?</h3>
+      <p>Both use X-rays, but a regular X-ray records a single still image. DMX records continuous video of the spine in motion, which allows movement between vertebrae to be observed and measured.</p>
+
+      <h3>Does a DMX study hurt?</h3>
+      <p>The study itself is not painful. You are asked to move within a range you can comfortably manage, and the movements are adjusted if an injury makes certain positions difficult.</p>
+
+      <h3>Can DMX replace an MRI?</h3>
+      <p>No. They answer different questions. MRI shows discs, nerves, and soft tissues, while DMX shows how the vertebrae move relative to one another. Your clinician will recommend studies only when they are likely to change the plan of care.</p>
+
+      <h3>How long does it take?</h3>
+      <p>The imaging portion usually takes only a few minutes. A new patient visit also includes a history and examination, so plan on a full appointment. The findings are reviewed with you afterward.</p>
+
+      <h3>Is there radiation exposure?</h3>
+      <p>Yes. Like any X-ray study, DMX uses ionizing radiation, which is why it is used only when the clinical question justifies it and is avoided during pregnancy. Ask your clinician about the exposure for your situation.</p>
+
+      <p>If neck or back pain has not settled down, or does not match what your imaging has shown, you are welcome to request an evaluation.</p>
+
+      <!-- AUTHOR BIO -->
+      <div class="author-bio">
+        <div class="bio-avatar">JM</div>
+        <div class="bio-content">
+          <div class="bio-label">About the Author</div>
+          <div class="bio-name">Dr. Jordan Moore</div>
+          <div class="bio-title">DC, FPSC, CICE, MACIME, CPIS | Optimum Chiropractic Care, Mobile, AL</div>
+          <p class="bio-text">Dr. Moore is a chiropractic physician practicing in Mobile, Alabama, with a clinical focus on spinal trauma. He is a Fellow in Primary Spine Care (FPSC), a two-year post-doctoral program jointly provided by the State University of New York at Buffalo Jacobs School of Medicine and Biomedical Sciences and Cleveland University&#8211;Kansas City College of Chiropractic. Through SUNY Jacobs, he completed mini-fellowships in neuroradiology with Robert Peyster, MD, advanced MRI spine with Patricia Roche, DO, and musculoskeletal radiology with Kevin Baker, MD. He is a Certified Independent Chiropractic Examiner (CICE), a member of the American College of Independent Medical Examiners (MACIME), and a Diplomate Candidate of the International Academy of Neuromusculoskeletal Medicine (DIANM) through the University of Bridgeport.</p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Schedule an Evaluation</div>
+        <p>If neck or back pain has lingered or does not match your imaging, a thorough evaluation is the right first step. Dr. Moore accepts new patients at his Mobile, Alabama office.</p>
+        <a href="/contact" class="sidebar-cta">Request an Appointment</a>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Related Articles</div>
+        <ul class="sidebar-related-list" role="list">
+          <li><a href="/blog-whiplash-delayed">Why Whiplash Symptoms Are Often Delayed</a></li>
+          <li><a href="/blog-car-accident">What Happens to Your Spine in a Car Accident</a></li>
+          <li><a href="/services">Services at Optimum Chiropractic Care</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Practice Information</div>
+        <div style="font-size:0.85rem; color:var(--text-muted); line-height:1.8;">
+          <strong style="color:var(--charcoal); display:block; margin-bottom:0.25rem;">Optimum Chiropractic Care</strong>
+          7681 Old Shell Rd.<br />
+          Mobile, AL 36608<br />
+          <a href="tel:+12512818768" style="color:inherit;">(251) 281-8768</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Optimum <span>Chiropractic</span> Care</div>
+          <p class="footer-brand-text">Advanced chiropractic and trauma evaluation in Mobile, Alabama. Dr. Jordan Moore DC, FPSC, CICE, MACIME, CPIS.</p>
+          <div class="footer-contact">
+            7681 Old Shell Rd., Mobile, AL 36608<br />
+            <a href="tel:+12512818768" style="color:inherit; text-decoration:none;">(251) 281-8768</a><br />
+            <a href="mailto:drmoore@optimumchiropracticcare.com" style="color:inherit; text-decoration:none;">drmoore@optimumchiropracticcare.com</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links" role="list">
+            <li><a href="/about">About Dr. Moore</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/whiplash">Whiplash &amp; Trauma</a></li>
+            <li><a href="/for-attorneys">For Attorneys</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Patient Resources</div>
+          <ul class="footer-links" role="list">
+            <li><a href="/contact">New Patient Form</a></li>
+            <li><a href="/blog-feel-fine">After an Accident: Feel Fine?</a></li>
+            <li><a href="/blog-car-accident">Car Accident Spine Guide</a></li>
+            <li><a href="/blog-whiplash-delayed">Delayed Whiplash Symptoms</a></li>
+            <li><a href="/blog-chiropractor-auto-accident">Choosing a Chiropractor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Optimum Chiropractic Care. All rights reserved. Content is educational and does not constitute medical advice.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

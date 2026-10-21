@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Neck Instability and a Normal MRI | Dr. Jordan Moore</title>
+  <meta property="og:image" content="https://optimumchiropracticcare.com/aomsi-report.jpg" />
+  <meta name="description" content="Why a normal MRI does not rule out neck instability, how flexion-extension X-rays measure motion between vertebrae, and what it can mean for you." />
+  <link rel="canonical" href="https://optimumchiropracticcare.com/blog-neck-instability" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Why a Normal MRI Doesn't Rule Out Neck Instability",
+    "description": "Why a normal MRI does not rule out neck instability, how flexion-extension X-rays measure motion between vertebrae, and what it can mean for you.",
+    "url": "https://optimumchiropracticcare.com/blog-neck-instability",
+    "datePublished": "2026-10-21",
+    "dateModified": "2026-10-21",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Jordan Moore",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "DC, FPSC, CICE, MACIME, CPIS",
+      "affiliation": {
+        "@type": "MedicalOrganization",
+        "name": "Optimum Chiropractic Care",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7681 Old Shell Rd.",
+          "addressLocality": "Mobile",
+          "addressRegion": "AL",
+          "postalCode": "36608"
+        }
+      }
+    },
+    "publisher": {
+      "@type": "MedicalOrganization",
+      "name": "Optimum Chiropractic Care",
+      "url": "https://optimumchiropracticcare.com"
+    },
+    "medicalAudience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
+    },
+    "about": {
+      "@type": "MedicalTest",
+      "name": "Flexion-extension radiographs of the cervical spine"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can an MRI show neck instability?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An MRI can show discs, nerves, the spinal cord, and soft tissues very well, but it is usually taken while you lie still in one position. Because instability is about how much one vertebra moves relative to its neighbor, motion studies such as flexion and extension X-rays are often added when instability is suspected."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "If my MRI was normal, do I need X-rays too?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not always. Your history and examination decide whether motion imaging is likely to answer a useful question. It is more often considered when symptoms persist after an injury or do not match what the MRI shows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does neck instability mean I need surgery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not necessarily. Many people with measurable motion changes are managed conservatively. Significant instability, or signs that nerves or the spinal cord are affected, may call for a surgical opinion, and an evaluation helps sort out which situation applies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there radiation with flexion and extension X-rays?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Like any X-ray, they use ionizing radiation, so they are used only when the clinical question justifies it and are avoided during pregnancy. Tell your clinician if you are or may be pregnant."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --charcoal: #1e2228;
+      --teal: #2a7a6f;
+      --teal-light: #3a9a8d;
+      --gold: #c9a84c;
+      --gold-light: #e0c06a;
+      --cream: #f8f5ef;
+      --white: #ffffff;
+      --text: #2c3038;
+      --text-muted: #6b7280;
+      --border: #e5e1d8;
+
+      --bg: var(--white);
+      --surface: var(--cream);
+      --fg: var(--text);
+      --fg-muted: var(--text-muted);
+      --rule: var(--border);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--charcoal);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 100;
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--white);
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta {
+      background: var(--teal) !important;
+      color: var(--white) !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 4px;
+      font-weight: 500 !important;
+    }
+    .nav-cta:hover { background: var(--teal-light) !important; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
+    .nav-hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--white); margin: 5px 0; transition: 0.2s;
+    }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      background: var(--charcoal);
+      padding: 4rem 2rem 3.5rem;
+    }
+    .article-header-inner {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    .article-breadcrumb {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .article-breadcrumb a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .article-breadcrumb a:hover { color: var(--gold); }
+    .article-breadcrumb svg { opacity: 0.4; }
+    .article-category {
+      display: inline-block;
+      background: rgba(42,122,111,0.3);
+      border: 1px solid rgba(42,122,111,0.5);
+      color: var(--teal-light);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0.3rem 0.85rem;
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+    }
+    .article-header h1 {
+      font-size: clamp(1.9rem, 4vw, 2.75rem);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      text-wrap: balance;
+    }
+    .article-header h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .meta-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .author-info { display: flex; flex-direction: column; gap: 0.1rem; }
+    .author-name {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--white);
+    }
+    .author-creds {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.04em;
+    }
+    .meta-divider {
+      width: 1px;
+      height: 28px;
+      background: rgba(255,255,255,0.15);
+    }
+    .meta-date {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .meta-read {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-layout {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 4rem;
+      align-items: start;
+    }
+    .article-body {
+      min-width: 0;
+    }
+    .article-body p {
+      font-size: 1.0rem;
+      line-height: 1.8;
+      color: var(--fg);
+      margin-bottom: 1.5rem;
+    }
+    .article-body p:last-of-type { margin-bottom: 0; }
+    .article-body h2 {
+      font-size: 1.65rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin: 2.75rem 0 1rem;
+      line-height: 1.25;
+      text-wrap: balance;
+    }
+    .article-body h2:first-child { margin-top: 0; }
+    .article-body h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin: 2rem 0 0.75rem;
+      line-height: 1.3;
+    }
+    .article-body ul, .article-body ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .article-body li {
+      font-size: 1.0rem;
+      line-height: 1.8;
+      color: var(--fg);
+      margin-bottom: 0.5rem;
+    }
+    .article-body strong { font-weight: 600; color: var(--charcoal); }
+
+    .article-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.75rem 0;
+    }
+
+    .callout {
+      background: var(--cream);
+      border-left: 3px solid var(--teal);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 6px 6px 0;
+      margin: 2rem 0;
+    }
+    .callout p {
+      font-size: 0.95rem !important;
+      color: var(--charcoal) !important;
+      margin-bottom: 0 !important;
+      line-height: 1.7 !important;
+    }
+    .callout strong { color: var(--teal) !important; }
+
+    /* ── AUTHOR BIO ── */
+    .author-bio {
+      background: var(--charcoal);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-top: 3rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+    .bio-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .bio-content { min-width: 0; }
+    .bio-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .bio-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+    .bio-title {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.85rem;
+      letter-spacing: 0.03em;
+    }
+    .bio-text {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.7;
+    }
+
+    /* ── SIDEBAR ── */
+    .article-sidebar {
+      position: sticky;
+      top: calc(68px + 2rem + env(safe-area-inset-top, 0px));
+    }
+    .sidebar-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .sidebar-card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+    }
+    .sidebar-cta {
+      display: block;
+      background: var(--teal);
+      color: var(--white);
+      text-align: center;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .sidebar-cta:hover { background: var(--teal-light); }
+    .sidebar-related-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .sidebar-related-list li a {
+      font-size: 0.875rem;
+      color: var(--teal);
+      text-decoration: none;
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      transition: color 0.2s;
+    }
+    .sidebar-related-list li a:hover { color: var(--charcoal); }
+    .sidebar-related-list li a::before {
+      content: '→';
+      flex-shrink: 0;
+      margin-top: 0.05em;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal);
+      padding: 3.5rem 2rem 2.5rem;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 2.5rem;
+    }
+    .footer-brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+    .footer-brand-name span { color: var(--gold); }
+    .footer-brand-text {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .footer-contact {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.9;
+    }
+    .footer-heading {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .footer-links a {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 1.5rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .article-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .article-sidebar {
+        position: static;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: block; }
+      .article-header { padding: 2.5rem 1.25rem 2.5rem; }
+      .article-layout { padding: 2.5rem 1.25rem 3.5rem; }
+      .footer-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+      .author-bio { flex-direction: column; gap: 1rem; }
+    }
+
+    .article-figure { margin: 0 0 2rem; }
+    .article-figure img { width: 100%; height: auto; display: block; border-radius: 10px; aspect-ratio: 16 / 9; object-fit: cover; }
+    .article-figure.inline img { aspect-ratio: 3 / 2; }
+    .article-figure figcaption { font-size: 0.78rem; color: var(--text-muted, #6b6b66); margin-top: 0.6rem; line-height: 1.5; }
+    .article-body .author-bio .bio-text { color: rgba(255,255,255,0.88); font-size: 0.92rem; line-height: 1.75; margin-bottom: 0; }
+    .article-body .author-bio .bio-title { color: rgba(255,255,255,0.78); }
+    .compare { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin: 0 0 0.5rem; }
+    .compare figure { margin: 0; }
+    .compare img { width: 100%; height: auto; display: block; border-radius: 8px; background: #0f1115; }
+    .compare .tag { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--teal); margin-top: 0.5rem; }
+    .compare-caption { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem; }
+  </style>
+  <link rel="alternate" type="application/rss+xml" title="Optimum Chiropractic Care Blog" href="/feed.xml">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Site navigation">
+    <a href="/" class="nav-logo">Optimum <span>Chiropractic</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="/about">About Dr. Moore</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/whiplash">Whiplash &amp; Trauma</a></li>
+      <li><a href="/for-attorneys">For Attorneys</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact" class="nav-cta">New Patient</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ARTICLE HEADER -->
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="/">Home</a>
+        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M1 1l6 5-6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <a href="/blog">Blog</a>
+        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M1 1l6 5-6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>Diagnostic Imaging</span>
+      </div>
+      <div class="article-category">Diagnostic Imaging</div>
+      <h1>Why a Normal MRI Doesn't Rule Out <em>Neck Instability</em></h1>
+      <div class="article-meta">
+        <div class="meta-author">
+          <div class="author-avatar">JM</div>
+          <div class="author-info">
+            <span class="author-name">Dr. Jordan Moore</span>
+            <span class="author-creds">DC, FPSC, CICE, MACIME, CPIS</span>
+          </div>
+        </div>
+        <div class="meta-divider"></div>
+        <span class="meta-date">October 21, 2026</span>
+        <div class="meta-divider"></div>
+        <span class="meta-read">6 min read</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ARTICLE LAYOUT -->
+  <div class="article-layout">
+
+    <!-- BODY -->
+    <article class="article-body">
+      <figure class="article-figure inline"><img src="aomsi-report.jpg" alt="Example of a digitized flexion-extension report showing angular motion at each cervical level compared with reference thresholds" width="665" height="681" loading="eager" decoding="async" style="aspect-ratio:auto;object-fit:contain;max-width:560px;margin:0 auto;background:#fff;" /><figcaption style="text-align:center;">Example of a digitized flexion-extension report, with motion measured at each level and compared with reference thresholds.</figcaption></figure>
+
+      <h2>A Normal MRI, and Still No Answers</h2>
+      <p>One of the most frustrating things a patient can hear after a car accident or fall is "your MRI looks fine." The pain is real, the neck feels unreliable, and yet the picture shows nothing that explains it. A normal MRI is good news about your discs, nerves, and spinal cord. It does not always settle the question of whether the neck is moving the way it should.</p>
+      <p>This article explains what neck instability is, why an MRI can miss it, what the research says, and how motion is evaluated. It is educational information, not a recommendation for any one person.</p>
+
+      <h2>What Neck Instability Means</h2>
+      <p>The vertebrae in your neck are held together by ligaments, the joint capsules, and the discs between them. Together they let the neck move freely while keeping each bone aligned with its neighbors. When those structures are stretched or torn, as can happen in a collision, a vertebra may glide or tilt farther than it should when you bend your head forward or back. That excess motion is what clinicians mean by instability or ligament laxity.</p>
+      <p>It does not mean the spine is about to come apart, and it is not the cause of every case of neck pain. It is one possible explanation, and one that is easy to overlook because it only shows when the neck moves.</p>
+
+      <h2>Why an MRI Can Miss It</h2>
+      <p>An MRI is a snapshot. You lie on your back, in a neutral position, and the scanner records the tissues at rest. It is excellent for discs, nerves, the spinal cord, and many soft tissues. It is not designed to show how far one vertebra slides or tilts relative to the next when you flex and extend your neck. A neck can look aligned and orderly in a still image and still move too much in real life.</p>
+
+      <div class="callout">
+        <p><strong>Worth knowing:</strong> This is not a criticism of MRI. It answers a different question. MRI shows what the tissues look like at rest, while a motion study shows how the segments behave during movement. Many patients need one, some need both, and some need neither.</p>
+      </div>
+
+      <h2>What the Research Shows</h2>
+      <p>A retrospective study of 111 patients and 555 cervical levels at a spine clinic compared neutral X-rays, flexion and extension X-rays, and MRI for detecting vertebral slippage (cervical spondylolisthesis). Its main findings were:</p>
+      <ul>
+        <li>Flexion and extension X-rays identified 17 levels with slippage (22%) that neutral X-rays alone had missed.</li>
+        <li>MRI missed about 38% of the levels with slippage that the X-rays identified.</li>
+        <li>The authors concluded that flexion and extension X-rays are a useful addition to standard X-rays and MRI when instability is suspected or when other studies do not explain a patient's pain.</li>
+      </ul>
+      <p>There are important limits, and they matter. The study looked at degenerative slippage in a clinic population, and it excluded patients with acute trauma or prior neck surgery, so it does not prove how often an MRI misses ligament injury after a collision. It was a single-center, retrospective review, and it did not follow patients' symptoms or outcomes. The study also counted instability using specific cutoffs (at least 2 mm of slippage on neutral films, or at least 1 mm of change between flexion and extension films). Different studies and guidelines use different cutoffs, so 1 mm should not be read as a universal dividing line.</p>
+      <p>What the study does support is a simple, practical point: a still MRI is not the whole story when the question is motion.</p>
+
+      <h2>How Instability Is Evaluated</h2>
+      <ol>
+        <li><strong>History and examination.</strong> The first step is understanding how you were hurt, what your symptoms are, and what your exam shows. These also decide whether motion imaging is likely to help.</li>
+        <li><strong>Flexion and extension X-rays.</strong> If appropriate, X-rays are taken with the neck bent forward and backward within a range you can comfortably manage.</li>
+        <li><strong>Digitization and measurement.</strong> The images are digitized in Symverta software, which measures translation (sliding) and angular motion at each spinal level.</li>
+        <li><strong>Comparison with published reference values.</strong> The measurements are compared with published thresholds, so the finding rests on numbers and not on a visual impression.</li>
+        <li><strong>Explanation of the findings.</strong> The results are reviewed with you in plain language, along with what they may mean for your care.</li>
+      </ol>
+      <p>In selected cases of significant spinal trauma, real-time motion imaging may also be used. You can read more in the article on <a href="/blog-digital-motion-x-ray">Digital Motion X-Ray</a>. Because X-rays use radiation, they are used only when the clinical question justifies them and are avoided during pregnancy.</p>
+
+      <h2>What It Can Mean for You Now</h2>
+      <p>Excess motion in a neck segment can be associated with symptoms such as:</p>
+      <ul>
+        <li>Neck pain that lingers or keeps returning after an injury</li>
+        <li>A feeling that the neck is unsteady, heavy, or needs support</li>
+        <li>Pain or catching with certain movements</li>
+        <li>Headaches or other symptoms that follow neck movement</li>
+        <li>Symptoms that do not match a normal MRI</li>
+      </ul>
+      <p>Not every measurable finding explains a person's pain, and many people have variations in motion without symptoms. That is why findings are always interpreted together with your history and examination. When instability is confirmed and relevant, it helps guide an individualized plan of care. If the findings are significant, or if there are signs that nerves or the spinal cord are involved, the right step may include a referral for a surgical opinion. No particular outcome can be guaranteed.</p>
+
+      <h2>What It May Mean Down the Road</h2>
+      <p>Knowing whether a neck segment is moving too much matters for the long term as well. Research on long-term outcomes continues to develop, and I do not want to overstate it. What is reasonable to say is that a problem that is never identified cannot be addressed, and that a clear measurement gives you and your clinicians a baseline to compare against if symptoms change. Early, accurate information also helps you avoid treatment that does not fit the actual problem.</p>
+
+      <h2>Who May Want an Evaluation</h2>
+      <ul>
+        <li>Neck pain that has persisted after a collision, fall, or other trauma</li>
+        <li>Ongoing symptoms despite a normal MRI</li>
+        <li>A sense of neck instability, catching, or pain that follows specific movements</li>
+        <li>Imaging that does not seem to explain how you feel</li>
+      </ul>
+      <p>If you were recently injured and have severe pain, weakness, numbness, trouble walking, or loss of bladder or bowel control, seek urgent medical care first.</p>
+
+      <h2>Where Dr. Moore's Training Fits</h2>
+      <p>Dr. Moore is a Fellow in Primary Spine Care (FPSC) and has completed radiology mini-fellowships through SUNY Jacobs in neuroradiology, advanced MRI of the spine, and musculoskeletal radiology, along with specialized training in X-ray digitization methodology. In practice, that background helps him decide when motion imaging is likely to add useful information and how to read it alongside an MRI. You can read more on the <a href="/about">About page</a> and the <a href="/whiplash">whiplash and trauma</a> page, and see how colorized exhibits make MRI findings easier to follow in the article on <a href="/blog-mri-colorization">MRI colorization</a>.</p>
+
+      <hr class="article-rule" />
+
+      <h2>Common Questions</h2>
+      <h3>Can an MRI show neck instability?</h3>
+      <p>An MRI can show discs, nerves, the spinal cord, and soft tissues very well, but it is usually taken while you lie still in one position. Because instability is about how much one vertebra moves relative to its neighbor, motion studies such as flexion and extension X-rays are often added when instability is suspected.</p>
+
+      <h3>If my MRI was normal, do I need X-rays too?</h3>
+      <p>Not always. Your history and examination decide whether motion imaging is likely to answer a useful question. It is more often considered when symptoms persist after an injury or do not match what the MRI shows.</p>
+
+      <h3>Does neck instability mean I need surgery?</h3>
+      <p>Not necessarily. Many people with measurable motion changes are managed conservatively. Significant instability, or signs that nerves or the spinal cord are affected, may call for a surgical opinion, and an evaluation helps sort out which situation applies.</p>
+
+      <h3>Is there radiation with flexion and extension X-rays?</h3>
+      <p>Yes. Like any X-ray, they use ionizing radiation, so they are used only when the clinical question justifies it and are avoided during pregnancy. Tell your clinician if you are or may be pregnant.</p>
+
+      <p>If your neck has not felt right since an injury, or your imaging does not seem to match your symptoms, you are welcome to request an evaluation.</p>
+
+      <h2>Reference</h2>
+      <p style="font-size:0.88rem;line-height:1.7;">Alvarez AP, Anderson A, Farhan SD, Lu Y, Lee YP, Oh M, Rosen C, Kiester D, Bhatia N. The Utility of Flexion-Extension Radiographs in Degenerative Cervical Spondylolisthesis. PubMed ID 35276718. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9311460" rel="noopener">Full text</a>.</p>
+
+      <!-- AUTHOR BIO -->
+      <div class="author-bio">
+        <div class="bio-avatar">JM</div>
+        <div class="bio-content">
+          <div class="bio-label">About the Author</div>
+          <div class="bio-name">Dr. Jordan Moore</div>
+          <div class="bio-title">DC, FPSC, CICE, MACIME, CPIS | Optimum Chiropractic Care, Mobile, AL</div>
+          <p class="bio-text">Dr. Moore is a chiropractic physician practicing in Mobile, Alabama, with a clinical focus on spinal trauma. He is a Fellow in Primary Spine Care (FPSC), a two-year post-doctoral program jointly provided by the State University of New York at Buffalo Jacobs School of Medicine and Biomedical Sciences and Cleveland University&#8211;Kansas City College of Chiropractic. Through SUNY Jacobs, he completed mini-fellowships in neuroradiology with Robert Peyster, MD, advanced MRI spine with Patricia Roche, DO, and musculoskeletal radiology with Kevin Baker, MD. He is a Certified Independent Chiropractic Examiner (CICE), a member of the American College of Independent Medical Examiners (MACIME), and a Diplomate Candidate of the International Academy of Neuromusculoskeletal Medicine (DIANM) through the University of Bridgeport.</p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Schedule an Evaluation</div>
+        <p>If your neck has not felt right since an injury, or your MRI does not explain your symptoms, a thorough evaluation is the right first step. Dr. Moore accepts new patients at his Mobile, Alabama office.</p>
+        <a href="/contact" class="sidebar-cta">Request an Appointment</a>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Related Articles</div>
+        <ul class="sidebar-related-list" role="list">
+          <li><a href="/blog-mri-colorization">MRI Colorization Explained</a></li>
+          <li><a href="/blog-digital-motion-x-ray">Digital Motion X-Ray Explained</a></li>
+          <li><a href="/blog-whiplash-delayed">Why Whiplash Symptoms Are Often Delayed</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Practice Information</div>
+        <div style="font-size:0.85rem; color:var(--text-muted); line-height:1.8;">
+          <strong style="color:var(--charcoal); display:block; margin-bottom:0.25rem;">Optimum Chiropractic Care</strong>
+          7681 Old Shell Rd.<br />
+          Mobile, AL 36608<br />
+          <a href="tel:+12512818768" style="color:inherit;">(251) 281-8768</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Optimum <span>Chiropractic</span> Care</div>
+          <p class="footer-brand-text">Advanced chiropractic and trauma evaluation in Mobile, Alabama. Dr. Jordan Moore DC, FPSC, CICE, MACIME, CPIS.</p>
+          <div class="footer-contact">
+            7681 Old Shell Rd., Mobile, AL 36608<br />
+            <a href="tel:+12512818768" style="color:inherit; text-decoration:none;">(251) 281-8768</a><br />
+            <a href="mailto:drmoore@optimumchiropracticcare.com" style="color:inherit; text-decoration:none;">drmoore@optimumchiropracticcare.com</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links" role="list">
+            <li><a href="/about">About Dr. Moore</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/whiplash">Whiplash &amp; Trauma</a></li>
+            <li><a href="/for-attorneys">For Attorneys</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Patient Resources</div>
+          <ul class="footer-links" role="list">
+            <li><a href="/contact">New Patient Form</a></li>
+            <li><a href="/blog-feel-fine">After an Accident: Feel Fine?</a></li>
+            <li><a href="/blog-car-accident">Car Accident Spine Guide</a></li>
+            <li><a href="/blog-whiplash-delayed">Delayed Whiplash Symptoms</a></li>
+            <li><a href="/blog-chiropractor-auto-accident">Choosing a Chiropractor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Optimum Chiropractic Care. All rights reserved. Content is educational and does not constitute medical advice.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

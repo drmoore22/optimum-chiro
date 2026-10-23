@@ -45,6 +45,9 @@
     .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.75); margin-bottom: 2rem; line-height: 1.7; }
     .hero-creds { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem; }
     .cred-badge { background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.35); color: var(--gold-light); font-size: 0.75rem; padding: 0.3rem 0.75rem; border-radius: 20px; letter-spacing: 0.05em; }
+    .hero-247 { margin-top: 1.5rem; font-size: 0.95rem; color: rgba(255,255,255,0.85); max-width: 520px; }
+    .hero-247 strong { color: var(--gold-light); }
+    .hero-247 a { color: var(--white); text-decoration: underline; }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
     .btn-primary { background: var(--teal); color: var(--white); padding: 0.875rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: background 0.2s; }
     .btn-primary:hover { background: var(--teal-light); }
@@ -146,6 +149,7 @@
         "name": "Optimum Chiropractic Care",
         "url": "https://optimumchiropracticcare.com",
         "telephone": "(251) 281-8768",
+        "contactPoint": { "@type": "ContactPoint", "telephone": "+1-251-281-8768", "contactType": "customer service", "description": "Call or text Dr. Moore directly after a car accident, any time of day. For emergencies, call 911.", "areaServed": "Mobile, AL", "availableLanguage": "English" },
         "email": "drmoore@optimumchiropracticcare.com",
         "address": {
           "@type": "PostalAddress",
@@ -230,6 +234,7 @@
         <a href="/contact" class="btn-primary">Request Appointment</a>
         <a href="/about" class="btn-outline">Credentials & Training</a>
       </div>
+      <p class="hero-247"><strong>Hurt in a car accident?</strong> Call or text Dr. Moore directly at <a href="tel:+12512818768">(251) 281-8768</a>, any time of day. For emergencies, call 911.</p>
       <div class="hero-creds">
         <span class="cred-badge">FPSC</span>
         <span class="cred-badge">CICE</span>
@@ -501,7 +506,7 @@
 
 <div class="cta-band">
   <h2>Ready to Schedule a New Patient Visit?</h2>
-  <p>Call our office or submit the contact form. We typically respond within one business day.</p>
+  <p>Call our office or submit the contact form. Hurt in a car accident? Call or text Dr. Moore directly at <a href="tel:+12512818768" style="color:#fff;text-decoration:underline">(251) 281-8768</a>, any time of day. For emergencies, call 911.</p>
   <a href="/contact" class="btn-white">Request Appointment</a>
 </div>
 

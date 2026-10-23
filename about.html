@@ -408,6 +408,11 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
 }
 
+
+.office-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; margin-top: 28px; }
+.office-fig { margin: 0; border-radius: 8px; overflow: hidden; border: 1px solid var(--card-border); }
+.office-fig img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+
 .section-eyebrow {
   font-size: 0.76rem;
   font-weight: 500;
@@ -1049,6 +1054,25 @@ img { max-width: 100%; display: block; }
           Fluoroscopic video imaging of the spine in real motion, used for significant spinal trauma. The only DMX unit in the Mobile, Alabama area, it can show abnormal joint translation and dynamic instability frame by frame.
         </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICE GALLERY -->
+<section class="section office-gallery" aria-labelledby="office-heading">
+  <div class="section-inner">
+    <p class="section-eyebrow">The Office</p>
+    <h2 id="office-heading">Inside Optimum Chiropractic Care</h2>
+    <p class="section-lead">7681 Old Shell Rd., Mobile, Alabama. Imaging, rehabilitation, and therapy equipment are on site.</p>
+    <div class="office-grid">
+    <figure class="office-fig"><img src="/office-waiting-area.jpg" alt="Waiting area at Optimum Chiropractic Care in Mobile, Alabama" width="1200" height="900" loading="lazy"></figure>
+    <figure class="office-fig"><img src="/office-treatment-floor.jpg" alt="Open treatment floor with adjusting tables and rehabilitation stations" width="1200" height="900" loading="lazy"></figure>
+    <figure class="office-fig"><img src="/office-xray-room.jpg" alt="In-office digital X-ray room used for flexion and extension films" width="1200" height="900" loading="lazy"></figure>
+    <figure class="office-fig"><img src="/office-digital-motion-xray.jpg" alt="Digital Motion X-Ray (video fluoroscopy) unit in the office" width="1200" height="900" loading="lazy"></figure>
+    <figure class="office-fig"><img src="/office-therapy-room.jpg" alt="Therapy room with a motorized treatment table and therapy equipment" width="1200" height="900" loading="lazy"></figure>
+    <figure class="office-fig"><img src="/office-laser-shockwave.jpg" alt="Class IV laser and Storz shockwave therapy equipment" width="1200" height="900" loading="lazy"></figure>
+    <figure class="office-fig"><img src="/office-credentials-wall.jpg" alt="Wall of framed post-doctoral certificates earned by Dr. Jordan Moore" width="1200" height="900" loading="lazy"></figure>
+    <figure class="office-fig"><img src="/office-quiet-room.jpg" alt="Quiet room at Optimum Chiropractic Care" width="1200" height="900" loading="lazy"></figure>
     </div>
   </div>
 </section>

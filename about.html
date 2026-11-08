@@ -413,6 +413,12 @@ img { max-width: 100%; display: block; }
 .office-fig { margin: 0; border-radius: 8px; overflow: hidden; border: 1px solid var(--card-border); }
 .office-fig img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
 
+.cred-glossary { display: grid; gap: 14px; margin-top: 24px; max-width: 800px; }
+.cred-def { background: var(--surface); border: 1px solid var(--card-border); border-radius: 8px; padding: 16px 20px; }
+.cred-def dt { font-weight: 600; color: var(--teal); letter-spacing: 0.04em; margin-bottom: 4px; }
+.cred-def dd { margin: 0; color: var(--fg-muted); line-height: 1.65; font-size: 0.97rem; }
+.cred-key { margin-top: 1rem; font-size: 0.85rem; line-height: 1.6; color: rgba(255,255,255,0.75); max-width: 640px; }
+
 .section-eyebrow {
   font-size: 0.76rem;
   font-weight: 500;
@@ -832,6 +838,7 @@ img { max-width: 100%; display: block; }
         <span class="cred-badge">Diplomate Candidate DIANM</span>
         <span class="cred-badge">Published Case Reports</span>
       </div>
+      <p class="cred-key">FPSC: Fellow in Primary Spine Care. CICE: Certified Independent Chiropractic Examiner. MACIME: Member, American College of Independent Medical Examiners. CPIS: Chiropractic Personal Injury Specialist.</p>
       <p class="hero-desc">
         Dr. Moore's practice in Mobile, Alabama is built around the evaluation of spinal ligament laxity, using X-ray digitization with Symverta and fellowship training in the diagnosis, prognosis, and treatment of ligament injury.
       </p>
@@ -849,6 +856,22 @@ img { max-width: 100%; display: block; }
 </section>
 
 <!-- CREDENTIAL TIMELINE -->
+<!-- CREDENTIALS SPELLED OUT -->
+<section class="section" aria-labelledby="cred-glossary-heading">
+  <div class="section-inner">
+    <p class="section-eyebrow">Credentials, Spelled Out</p>
+    <h2 id="cred-glossary-heading">What Each Credential Means</h2>
+    <dl class="cred-glossary">
+      <div class="cred-def"><dt>DC</dt><dd>Doctor of Chiropractic.</dd></div>
+      <div class="cred-def"><dt>FPSC</dt><dd>Fellow in Primary Spine Care. A two-year post-doctoral fellowship jointly provided by the State University of New York at Buffalo Jacobs School of Medicine and Biomedical Sciences and Cleveland University-Kansas City. It is a spine care fellowship, not a personal injury credential.</dd></div>
+      <div class="cred-def"><dt>CICE</dt><dd>Certified Independent Chiropractic Examiner.</dd></div>
+      <div class="cred-def"><dt>MACIME</dt><dd>Member, American College of Independent Medical Examiners.</dd></div>
+      <div class="cred-def"><dt>CPIS</dt><dd>Chiropractic Personal Injury Specialist. A separate certification, completed through CCED Seminars and Texas Chiropractic College.</dd></div>
+      <div class="cred-def"><dt>DIANM (candidate)</dt><dd>Diplomate Candidate. Dr. Moore is working toward the Diplomate of the International Academy of Neuromusculoskeletal Medicine through the University of Bridgeport. The diplomate has not yet been awarded.</dd></div>
+    </dl>
+  </div>
+</section>
+
 <section class="section" aria-labelledby="credentials-heading">
   <div class="section-inner">
     <p class="section-eyebrow">Academic &amp; Clinical Training</p>

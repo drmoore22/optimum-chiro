@@ -787,6 +787,7 @@ svg .arrow { stroke: #2a7a6f; stroke-width: 2; fill: none; marker-end: url(#arro
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/mri-compare.css">
 </head>
 <body>
 
@@ -872,10 +873,32 @@ svg .arrow { stroke: #2a7a6f; stroke-width: 2; fill: none; marker-end: url(#arro
         <p>A car accident can injure the ligaments that hold the neck and back vertebrae together. The resulting laxity often cannot be seen on a standard X-ray, and MRI shows the spine in one static position, so it is not a reliable indicator of ligament laxity.</p>
         <p>Dr. Moore starts with a detailed history and neuromusculoskeletal examination. When indicated, he takes flexion and extension X-rays and digitizes them in Symverta, which measures translation and angular deviation at each spinal segment. His Fellowship in Primary Spine Care covered the diagnosis, prognosis, and treatment of spinal ligament injury in depth. Digital Motion X-Ray is available for selected cases.</p>
         <p>Learn more on the <a href="/whiplash">whiplash and spinal ligament laxity page</a>, or see how <a href="/blog-mri-colorization">MRI colorization</a> makes disc findings easier to see.</p>
-        <figure class="mri-fig">
-          <img src="/mri-example-deidentified.jpg" alt="Sagittal T2 cervical spine MRI with labeled color overlays marking vertebrae C3 to C6, disc herniations at C3-4, C4-5 and C5-6, the spinal cord, and dilated epidural veins" width="1048" height="855" loading="lazy">
-          <figcaption>Example of a colorized MRI. Labeled color overlays are added to the original image, and patient details have been removed.</figcaption>
-        </figure>
+        <div class="mri-compare" data-mri>
+          <div class="mri-stage-wrap">
+            <div class="mri-stage">
+              <img class="mri-base" src="/mri-original-deidentified.jpg" alt="Original sagittal T2 cervical spine MRI with no overlays" width="1048" height="855" loading="lazy">
+              <img class="mri-color" src="/mri-example-deidentified.jpg" alt="Sagittal T2 cervical spine MRI with labeled color overlays marking vertebrae C3 to C6, disc herniations at C3-4, C4-5 and C5-6, the spinal cord, and dilated epidural veins" width="1048" height="855" loading="lazy">
+            <img class="mri-layer" data-layer="vertebrae" src="/mri-layer-vertebrae.png" alt="" width="1048" height="855" loading="lazy">
+            <img class="mri-layer" data-layer="discs" src="/mri-layer-discs.png" alt="" width="1048" height="855" loading="lazy">
+            <img class="mri-layer" data-layer="cord" src="/mri-layer-cord.png" alt="" width="1048" height="855" loading="lazy">
+            <img class="mri-layer" data-layer="veins" src="/mri-layer-veins.png" alt="" width="1048" height="855" loading="lazy">
+              <span class="mri-tag l">Colorized</span><span class="mri-tag r">Original</span>
+              <div class="mri-handle" aria-hidden="true"></div>
+              <input class="mri-range" type="range" min="0" max="100" step="0.5" value="50" aria-label="Slide to compare the colorized MRI with the original MRI">
+              <span class="mri-focus"></span>
+            </div>
+          </div>
+          <p class="mri-hint">Drag the slider to compare. Tap a color below to isolate it.</p>
+          <div class="mri-chips" role="group" aria-label="Isolate a color layer">
+          <button type="button" class="mri-chip" data-layer="vertebrae" data-info="Yellow marks the vertebral bodies C3 through C6, labeled on the image so the levels are easy to follow." aria-pressed="false"><span class="mri-dot" style="background:#deb03c"></span>Vertebrae</button>
+          <button type="button" class="mri-chip" data-layer="discs" data-info="Red marks the discs at C3-4, C4-5 and C5-6, the levels labeled as disc herniations on this example." aria-pressed="false"><span class="mri-dot" style="background:#b01c1c"></span>Discs</button>
+          <button type="button" class="mri-chip" data-layer="cord" data-info="Green marks the spinal cord as it runs behind the vertebrae and discs." aria-pressed="false"><span class="mri-dot" style="background:#78c846"></span>Spinal cord</button>
+          <button type="button" class="mri-chip" data-layer="veins" data-info="Blue marks the dilated epidural veins labeled on this example, which sit along the front of the spinal canal." aria-pressed="false"><span class="mri-dot" style="background:#64a0d7"></span>Epidural veins</button>
+          </div>
+          <p class="mri-info" data-default="Tap a color to see what it marks on the image." aria-live="polite">Tap a color to see what it marks on the image.</p>
+          <div class="mri-static"><img src="/mri-example-deidentified.jpg" alt="Sagittal T2 cervical spine MRI with labeled color overlays marking vertebrae C3 to C6, disc herniations at C3-4, C4-5 and C5-6, the spinal cord, and dilated epidural veins" width="1048" height="855" loading="lazy"></div>
+          <p class="mri-caption">Example of a colorized MRI. Labeled color overlays are added to the original image, and patient details have been removed. For education only, not a diagnosis.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -1006,5 +1029,6 @@ svg .arrow { stroke: #2a7a6f; stroke-width: 2; fill: none; marker-end: url(#arro
   });
 </script>
 
+<script src="/mri-compare.js" defer></script>
 </body>
 </html>

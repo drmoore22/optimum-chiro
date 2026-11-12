@@ -1,5 +1,5 @@
 .mri-compare { margin: 28px 0 0; }
-.mri-stage { position: relative; width: 100%; aspect-ratio: 1048 / 855; border-radius: 10px; overflow: hidden; border: 1px solid var(--card-border); background: #000; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.mri-stage { position: relative; width: 100%; aspect-ratio: 932 / 810; border-radius: 10px; overflow: hidden; border: 1px solid var(--card-border); background: #000; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
 .mri-stage img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
 .mri-color { clip-path: inset(0 calc(100% - var(--pos, 50%)) 0 0); transition: opacity .25s ease; }
 .mri-layer { opacity: 0; transition: opacity .25s ease; clip-path: inset(0 calc(100% - var(--pos, 50%)) 0 0); }
